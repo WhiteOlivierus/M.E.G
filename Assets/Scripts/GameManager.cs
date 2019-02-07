@@ -10,12 +10,12 @@ public class GameManager : MonoBehaviour
     public int maxPointsToSpend;
     public Text goalText;
     [Space]
-    public Slider economySlider;
-    public Slider climateSlider;
-    public Slider policySlider;
-    public Slider rescourcesSlider;
+    public SliderComponent economySlider;
+    public SliderComponent climateSlider;
+    public SliderComponent policySlider;
+    public SliderComponent rescourcesSlider;
     [Space]
-    public Button generateBtn;
+    public BoxCollider generateBtn;
     [Space]
     public Text turns;
     public int maxTurns;
@@ -104,11 +104,11 @@ public class GameManager : MonoBehaviour
 
         if (points < 0)
         {
-            generateBtn.interactable = false;
+            generateBtn.enabled = false;
         }
         else
         {
-            generateBtn.interactable = true;
+            generateBtn.enabled = true;
         }
 
         //update the live slider snapshot to lock it
@@ -151,7 +151,7 @@ public class GameManager : MonoBehaviour
             ResetSliders();
             CreateSnapShot();
             SetGoal();
-            generateBtn.interactable = true;
+            generateBtn.enabled = true;
         }
     }
 

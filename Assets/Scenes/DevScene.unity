@@ -1649,6 +1649,9 @@ MonoBehaviour:
   allScenarios:
   - {fileID: 11400000, guid: be2fa16b11246c744b639d1b2d01064b, type: 2}
   - {fileID: 11400000, guid: 22cba43de5d007a4798fd0f7efd4bdea, type: 2}
+  - {fileID: 11400000, guid: f89271265eba31d4a9138dbdebb88274, type: 2}
+  - {fileID: 11400000, guid: cbf1ff7847dc08e468791a4e0bd84f09, type: 2}
+  - {fileID: 11400000, guid: 705c305ed249e9a4ea4e759f5203c303, type: 2}
   result: {fileID: 1237671683}
   pointsToSpend: {fileID: 249314297}
   maxPointsToSpend: 20

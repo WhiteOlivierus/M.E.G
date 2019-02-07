@@ -52,9 +52,10 @@ public class GameManager : MonoBehaviour
         result.text = allScenarios[index].scenarioName;
         ResetSliders();
         CreateSnapShot();
+        turns.text = (int.Parse(turns.text) + 1).ToString();
     }
 
-    public void ConstrainPoints(Slider s)
+    public void ConstrainPoints(SliderComponent s)
     {
         //current slider in use
         int index = int.Parse(s.name);
@@ -137,10 +138,10 @@ public class GameManager : MonoBehaviour
 
     private void ResetSliders()
     {
-        economySlider.value = 0;
-        climateSlider.value = 0;
-        policySlider.value = 0;
-        rescourcesSlider.value = 0;
+        economySlider.position = 1;
+        climateSlider.position = 1;
+        policySlider.position = 1;
+        rescourcesSlider.position = 1;
     }
 
     private void Update()

@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             RaycastHit hit;
@@ -44,10 +44,12 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 selectedSlider.ChangePosition(-1);
+                gm.ConstrainPoints(selectedSlider);
             }
             else if (Input.GetKey(KeyCode.DownArrow))
             {
                 selectedSlider.ChangePosition(1);
+                gm.ConstrainPoints(selectedSlider);
             }
         }
     }

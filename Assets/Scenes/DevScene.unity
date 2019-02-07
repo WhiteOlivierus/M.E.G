@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 187712991}
   - component: {fileID: 187712990}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PointsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 298005288}
   - component: {fileID: 298005289}
   m_Layer: 5
-  m_Name: points
+  m_Name: PointsGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 369374014}
   - component: {fileID: 369374013}
   m_Layer: 5
-  m_Name: Generate
+  m_Name: GenerateBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -714,17 +714,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 2116596966}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1086694349}
-        m_MethodName: SetGoal
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1639,6 +1628,8 @@ MonoBehaviour:
   policySlider: {fileID: 573891334}
   rescourcesSlider: {fileID: 104296750}
   generateBtn: {fileID: 369374013}
+  turns: {fileID: 2116596966}
+  maxTurns: 2
 --- !u!4 &1086694350
 Transform:
   m_ObjectHideFlags: 0
@@ -1989,7 +1980,7 @@ GameObject:
   - component: {fileID: 1949152216}
   - component: {fileID: 1949152215}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TurnText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2047,7 +2038,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Year:'
+  m_Text: 'Turns:'
 --- !u!222 &1949152216
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2177,7 +2168,7 @@ GameObject:
   - component: {fileID: 2095059191}
   - component: {fileID: 2095059192}
   m_Layer: 5
-  m_Name: Year
+  m_Name: TurnGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2240,7 +2231,7 @@ GameObject:
   - component: {fileID: 2116596966}
   - component: {fileID: 2116596965}
   m_Layer: 5
-  m_Name: YearsPlaying
+  m_Name: Turns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

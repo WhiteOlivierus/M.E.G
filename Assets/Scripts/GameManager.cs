@@ -4,17 +4,21 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Scenario[] allScenarios;
+    [Space]
     public Text result;
     public Text pointsToSpend;
     public int maxPointsToSpend;
     public Text goalText;
-
+    [Space]
     public Slider economySlider;
     public Slider climateSlider;
     public Slider policySlider;
     public Slider rescourcesSlider;
-
+    [Space]
     public Button generateBtn;
+    [Space]
+    public Text turns;
+    public int maxTurns;
 
     private int[] snapShot = new int[4];
     private int[] lastSnapShot = new int[4];
@@ -22,10 +26,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         CreateSnapShot();
-        for (int i = 0; i < snapShot.Length; i++)
-        {
-            lastSnapShot[i] = snapShot[i];
-        }
         SetGoal();
         pointsToSpend.text = maxPointsToSpend.ToString();
     }
@@ -128,13 +128,31 @@ public class GameManager : MonoBehaviour
         snapShot[1] = (int)climateSlider.value;
         snapShot[2] = (int)policySlider.value;
         snapShot[3] = (int)rescourcesSlider.value;
+
+        for (int i = 0; i < snapShot.Length; i++)
+        {
+            lastSnapShot[i] = snapShot[i];
+        }
     }
 
-    private void RevertSnapShot()
+    private void ResetSliders()
     {
-        economySlider.value = snapShot[0];
-        climateSlider.value = snapShot[1];
-        policySlider.value = snapShot[2];
-        rescourcesSlider.value = snapShot[3];
+        economySlider.value = 0;
+        climateSlider.value = 0;
+        policySlider.value = 0;
+        rescourcesSlider.value = 0;
     }
+
+    private void Update()
+    {
+        if (int.Parse(turns.text) > maxTurns)
+        {
+            turns.text = "0";
+            ResetSliders();
+            CreateSnapShot();
+            SetGoal();
+            generateBtn.interactable = true;
+        }
+    }
+
 }

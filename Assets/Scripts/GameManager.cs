@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
         }
 
         result.text = allScenarios[index].scenarioName;
-
+        ResetSliders();
         CreateSnapShot();
     }
 

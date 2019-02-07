@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 36c949cdbec007644b455bb99570d4f7
+guid: a3ab23ae941c9b24787cc8a7f107e602
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -384,7 +384,7 @@ ModelImporter:
     importCameras: 0
     importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

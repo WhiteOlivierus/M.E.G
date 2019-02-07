@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
             lastSnapShot[i] = snapShot[i];
         }
         SetGoal();
+        pointsToSpend.text = maxPointsToSpend.ToString();
     }
 
     public void CheckScenario()
@@ -118,6 +119,7 @@ public class GameManager : MonoBehaviour
     public void SetGoal()
     {
         goalText.text = allScenarios[Random.Range(0, allScenarios.Length)].scenarioName;
+  pointsToSpend.text = maxPointsToSpend.ToString();
     }
 
     private void CreateSnapShot()

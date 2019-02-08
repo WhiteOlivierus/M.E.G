@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +7,10 @@ public class PlayerController : MonoBehaviour
 {
     private SliderComponent selectedSlider;
     private Color lastColor;
+    private Color lastSelectedColor;
     private GameManager gm;
+    private bool nextKeyStroke = true;
+    private GameObject lastSelectedSlider;
 
     private void Start()
     {
@@ -14,6 +18,45 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Update()
+    {
+        // HighLightObject();
+        SelectSlider();
+        if (selectedSlider && nextKeyStroke)
+        {
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                StartCoroutine("KeyDelay", -1);
+                nextKeyStroke = false;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                StartCoroutine("KeyDelay", 1);
+                nextKeyStroke = false;
+            }
+        }
+    }
+
+    private void HighLightObject()
+    {
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (lastSelectedSlider != hit.collider.gameObject)
+                lastSelectedSlider.GetComponent<Renderer>().material.color = lastSelectedColor;
+
+            lastSelectedSlider = hit.collider.gameObject;
+            lastSelectedColor = lastSelectedSlider.GetComponent<Renderer>().material.color;
+            lastSelectedSlider.GetComponent<Renderer>().material.color = Color.green;
+        }
+        else
+        {
+            lastSelectedSlider.GetComponent<Renderer>().material.color = lastSelectedColor;
+        }
+    }
+
+    void SelectSlider()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -38,19 +81,13 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
 
-        if (selectedSlider)
-        {
-            if (Input.GetKey(KeyCode.UpArrow))
-            {
-                selectedSlider.ChangePosition(-1);
-                gm.ConstrainPoints(selectedSlider);
-            }
-            else if (Input.GetKey(KeyCode.DownArrow))
-            {
-                selectedSlider.ChangePosition(1);
-                gm.ConstrainPoints(selectedSlider);
-            }
-        }
+    IEnumerator KeyDelay(int i)
+    {
+        selectedSlider.ChangePosition(i);
+        gm.ConstrainPoints(selectedSlider);
+        yield return new WaitForSeconds(.1f);
+        nextKeyStroke = true;
     }
 }

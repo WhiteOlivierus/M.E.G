@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -6,6 +7,10 @@ public class GameManager : MonoBehaviour
     public Scenario[] allScenarios;
     [Space]
     public Text result;
+    public Image resultImage;
+    public GameObject resultMonitor;
+    public Material resultMaterial;
+    [Space]
     public Text pointsToSpend;
     public int maxPointsToSpend;
     public Text goalText;
@@ -50,9 +55,13 @@ public class GameManager : MonoBehaviour
         }
 
         result.text = allScenarios[index].scenarioName;
+        resultImage.sprite = allScenarios[index].scenario;
+        StartCoroutine("EndState");
+
         ResetSliders();
         CreateSnapShot();
         turns.text = (int.Parse(turns.text) + 1).ToString();
+        pointsToSpend.text = maxPointsToSpend.ToString();
     }
 
     public void ConstrainPoints(SliderComponent s)
@@ -156,4 +165,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+    IEnumerator EndState()
+    {
+        Material t = resultMonitor.GetComponent<Renderer>().material;
+        resultMonitor.GetComponent<Renderer>().material = resultMaterial;
+        yield return new WaitForSeconds(5f);
+        resultMonitor.GetComponent<Renderer>().material = t;
+    }
 }

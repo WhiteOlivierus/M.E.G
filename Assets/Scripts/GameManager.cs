@@ -1,176 +1,101 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public Scenario[] allScenarios;
     [Space]
-    public Text result;
-    public Image resultImage;
-    public GameObject resultMonitor;
-    public Material resultMaterial;
+    public TextMesh resultText;
+    public TextMesh goalText;
     [Space]
-    public Text pointsToSpend;
-    public int maxPointsToSpend;
-    public Text goalText;
+    public SliderComponent[] allSliders;
     [Space]
-    public SliderComponent economySlider;
-    public SliderComponent climateSlider;
-    public SliderComponent policySlider;
-    public SliderComponent rescourcesSlider;
-    [Space]
-    public BoxCollider generateBtn;
-    [Space]
-    public Text turns;
+    public TextMesh turns;
     public int maxTurns;
+    [Space]
+    public GameObject chargePort;
 
-    private int[] snapShot = new int[4];
-    private int[] lastSnapShot = new int[4];
+    private int turnsLeft;
+    private DragableComponent connectedBattery;
 
-    private void Start()
+    public void CheckGameState()
     {
-        CreateSnapShot();
-        SetGoal();
-        pointsToSpend.text = maxPointsToSpend.ToString();
+        turnsLeft -= 1;
+        turns.text = turnsLeft.ToString();
+
+        if (CheckIfOutOfTurns())
+        {
+            ReleaseBattery();
+            SetText(goalText, "Replace batery for next goal");
+            SetText(resultText, "None");
+            return;
+        }
+
+        string scenarioResult = allScenarios[FindClosestScenarioToSliders()].scenarioName;
+        SetText(resultText, scenarioResult);
     }
 
-    public void CheckScenario()
+    private void SetText(TextMesh output, string text)
+    {
+        output.text = text;
+    }
+
+    private int FindClosestScenarioToSliders()
     {
         int index = 0;
         int lastScore = 0;
+
         for (int i = 0; i < allScenarios.Length; i++)
         {
+            Scenario currentScenario = allScenarios[i];
             int score = 0;
-            if (allScenarios[i].economy.x > economySlider.value || allScenarios[i].economy.y < economySlider.value) score++;
-            if (allScenarios[i].climate.x > economySlider.value || allScenarios[i].climate.y < economySlider.value) score++;
-            if (allScenarios[i].policy.x > economySlider.value || allScenarios[i].policy.y < economySlider.value) score++;
-            if (allScenarios[i].rescources.x > economySlider.value || allScenarios[i].rescources.y < economySlider.value) score++;
 
-            if (score >= lastScore)
+            for (int j = 0; j < allSliders.Length; j++)
+            {
+                Slider currentSlider = currentScenario.sliders[j];
+                if (currentSlider.between.y > allSliders[j].value)
+                {
+                    score += (int)Mathf.Abs(allSliders[j].value - currentSlider.between.y);
+                    allSliders[j].SetPrecisionMonitor(1);
+                }
+                else if (currentSlider.between.x < allSliders[j].value)
+                {
+                    score += (int)Mathf.Abs(allSliders[j].value - currentSlider.between.x);
+                    allSliders[j].SetPrecisionMonitor(-1);
+                }
+                else
+                {
+                    allSliders[j].SetPrecisionMonitor(0);
+                }
+            }
+
+            if (score <= lastScore)
             {
                 index = i;
                 lastScore = score;
             }
         }
 
-        result.text = allScenarios[index].scenarioName;
-        resultImage.sprite = allScenarios[index].scenario;
-        StartCoroutine("EndState");
-
-        ResetSliders();
-        CreateSnapShot();
-        turns.text = (int.Parse(turns.text) + 1).ToString();
-        pointsToSpend.text = maxPointsToSpend.ToString();
+        return index;
     }
 
-    public void ConstrainPoints(SliderComponent s)
+    private bool CheckIfOutOfTurns()
     {
-        //current slider in use
-        int index = int.Parse(s.name);
-        //current point total
-        int points = int.Parse(pointsToSpend.text);
-        //result for this slider
-        int result = 0;
-
-        //calculate how much points have to be removed/added
-        int direction = lastSnapShot[index] - (int)s.value;
-        result = direction;
-
-        //calculate the side of the orgin you are
-        int side = (int)s.value - snapShot[index];
-
-        if (side == 0)
-        {
-            //if you are back at base pos at 1 to points
-            if (direction < 0)
-                direction *= -1;
-            points += direction;
-        }
-        else if (side > 0)
-        {
-            //Rightside of the slider
-            print("Right side");
-            if (direction < 0)
-            {
-                direction *= -1;
-                points -= direction;
-            }
-            else if (direction > 0)
-            { points += direction; }
-        }
-        else if (side < 0)
-        {
-            //left side of the slider
-            print("Left side");
-            if (direction < 0)
-            {
-                direction *= -1;
-                points += direction;
-            }
-            else if (direction > 0)
-            { points -= direction; }
-        }
-
-        if (points < 0)
-        {
-            generateBtn.enabled = false;
-        }
-        else
-        {
-            generateBtn.enabled = true;
-        }
-
-        //update the live slider snapshot to lock it
-        lastSnapShot[index] -= result;
-        pointsToSpend.text = points.ToString();
+        return turnsLeft == 0;
     }
 
-    public void SetGoal()
+    private void ReleaseBattery()
     {
-        goalText.text = allScenarios[Random.Range(0, allScenarios.Length)].scenarioName;
-        pointsToSpend.text = maxPointsToSpend.ToString();
+        if (connectedBattery == null) { return; }
+
+        connectedBattery.StartCoroutine("ReleaseBatery");
     }
 
-    private void CreateSnapShot()
+    public void InitGame(DragableComponent cb)
     {
-        snapShot[0] = (int)economySlider.value;
-        snapShot[1] = (int)climateSlider.value;
-        snapShot[2] = (int)policySlider.value;
-        snapShot[3] = (int)rescourcesSlider.value;
-
-        for (int i = 0; i < snapShot.Length; i++)
-        {
-            lastSnapShot[i] = snapShot[i];
-        }
-    }
-
-    private void ResetSliders()
-    {
-        economySlider.position = 1;
-        climateSlider.position = 1;
-        policySlider.position = 1;
-        rescourcesSlider.position = 1;
-    }
-
-    private void Update()
-    {
-        if (int.Parse(turns.text) > maxTurns)
-        {
-            turns.text = "0";
-            ResetSliders();
-            CreateSnapShot();
-            SetGoal();
-            generateBtn.enabled = true;
-        }
-    }
-
-
-    IEnumerator EndState()
-    {
-        Material t = resultMonitor.GetComponent<Renderer>().material;
-        resultMonitor.GetComponent<Renderer>().material = resultMaterial;
-        yield return new WaitForSeconds(5f);
-        resultMonitor.GetComponent<Renderer>().material = t;
+        connectedBattery = cb;
+        turnsLeft = maxTurns;
+        turns.text = turnsLeft.ToString();
+        SetText(goalText, allScenarios[Random.Range(0, allScenarios.Length)].scenarioName);
     }
 }

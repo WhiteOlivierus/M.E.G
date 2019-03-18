@@ -32,7 +32,6 @@ public class DragableComponent : MonoBehaviour, IInteractable
         rb.useGravity = false;
         screenPoint = Camera.main.WorldToScreenPoint(graphics.transform.position);
         offset = graphics.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, screenPoint.z));
-        Debug.Log(screenPoint.z);
     }
 
     public void OnDrag()

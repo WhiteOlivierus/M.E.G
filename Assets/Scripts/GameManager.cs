@@ -16,7 +16,17 @@ public class GameManager : MonoBehaviour
     public GameObject chargePort;
 
     private int turnsLeft;
+    private Scenario currentScenario;
     private DragableComponent connectedBattery;
+
+    void Start()
+    {
+        for (int i = 0; i < allSliders.Length; i++)
+        {
+            ScenarioType s = (ScenarioType)i;
+            allSliders[i].sliderName.text = s.ToString();
+        }
+    }
 
     public void CheckGameState()
     {
@@ -47,18 +57,19 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < allScenarios.Length; i++)
         {
-            Scenario currentScenario = allScenarios[i];
+            // Scenario currentScenario = allScenarios[i];
             int score = 0;
 
             for (int j = 0; j < allSliders.Length; j++)
             {
                 Slider currentSlider = currentScenario.sliders[j];
-                if (currentSlider.between.y > allSliders[j].value)
+                float x = allSliders[j].value;
+                if (allSliders[j].value >= currentSlider.between.y)
                 {
                     score += (int)Mathf.Abs(allSliders[j].value - currentSlider.between.y);
                     allSliders[j].SetPrecisionMonitor(1);
                 }
-                else if (currentSlider.between.x < allSliders[j].value)
+                else if (allSliders[j].value <= currentSlider.between.x)
                 {
                     score += (int)Mathf.Abs(allSliders[j].value - currentSlider.between.x);
                     allSliders[j].SetPrecisionMonitor(-1);
@@ -96,6 +107,7 @@ public class GameManager : MonoBehaviour
         connectedBattery = cb;
         turnsLeft = maxTurns;
         turns.text = turnsLeft.ToString();
-        SetText(goalText, allScenarios[Random.Range(0, allScenarios.Length)].scenarioName);
+        currentScenario = allScenarios[Random.Range(0, allScenarios.Length)];
+        SetText(goalText, currentScenario.scenarioName);
     }
 }

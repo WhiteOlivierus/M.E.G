@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class SliderComponent : MonoBehaviour, IInteractable
 {
     public float value;
-
+    [HideInInspector] public TextMesh sliderName;
     [SerializeField] private int maxRange = 1;
     private Transform graphics;
     private Vector3 minSliderPosition;
@@ -20,6 +20,7 @@ public class SliderComponent : MonoBehaviour, IInteractable
         graphics = transform.GetChild(0).transform;
         minSliderPosition = transform.GetChild(1).transform.localPosition;
         maxSliderPosition = transform.GetChild(2).transform.localPosition;
+        sliderName = transform.GetChild(4).GetComponent<TextMesh>();
         precisionMonitor = transform.GetChild(5).GetComponent<TextMesh>();
         monitor = transform.GetChild(3).GetComponent<TextMesh>();
     }
@@ -51,7 +52,7 @@ public class SliderComponent : MonoBehaviour, IInteractable
     {
         Vector3 delta = Input.mousePosition - lastMousePosition;
         Vector3 pos = graphics.localPosition;
-        pos.x += delta.x * stepping;
+        pos.x += delta.y * stepping;
         graphics.localPosition = pos;
     }
 
@@ -99,13 +100,13 @@ public class SliderComponent : MonoBehaviour, IInteractable
         switch (i)
         {
             case -1:
-                precisionMonitor.text = ">";
+                precisionMonitor.text = "+";
                 break;
             case 0:
-                precisionMonitor.text = "=";
+                precisionMonitor.text = "OK";
                 break;
             case 1:
-                precisionMonitor.text = "<";
+                precisionMonitor.text = "-";
                 break;
             default:
                 precisionMonitor.text = "";

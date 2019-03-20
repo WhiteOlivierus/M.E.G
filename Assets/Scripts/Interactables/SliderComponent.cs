@@ -13,7 +13,7 @@ public class SliderComponent : MonoBehaviour, IInteractable
     private Vector3 lastMousePosition;
     private TextMesh monitor;
     private TextMesh precisionMonitor;
-    private float stepping = .01f;
+    private float stepping = .05f;
 
     private void Awake()
     {

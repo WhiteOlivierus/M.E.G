@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliders:
   - type: 0
-    between: {x: 20, y: 50}
+    between: {x: 0, y: 10}
   - type: 1
-    between: {x: 20, y: 50}
+    between: {x: 0, y: 0}
   - type: 2
-    between: {x: 20, y: 50}
+    between: {x: 0, y: 0}
   - type: 3
-    between: {x: 20, y: 50}
+    between: {x: 0, y: 0}
   - type: 4
-    between: {x: 20, y: 50}
+    between: {x: 0, y: 0}
   - type: 5
-    between: {x: 20, y: 50}
+    between: {x: 0, y: 0}
   scenarioName: Scenario 1
   scenario: {fileID: 0}

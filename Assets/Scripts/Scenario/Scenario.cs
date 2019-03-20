@@ -13,7 +13,7 @@ public class Scenario : ScriptableObject
     {
         for (int i = 0; i < sliders.Length; i++)
         {
-            sliders[i] = new Slider((ScenarioType)i);
+            sliders[i].type = (ScenarioType)i;
         }
     }
 }

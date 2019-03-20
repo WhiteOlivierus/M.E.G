@@ -277,6 +277,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1148117487, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1148117486, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
 --- !u!4 &69841257 stripped
@@ -558,6 +567,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2400002
       objectReference: {fileID: 0}
+    - target: {fileID: 1148117487, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1148117486, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
 --- !u!4 &176533224 stripped
@@ -598,11 +616,11 @@ TextMesh:
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
-  m_TabSize: 4
-  m_FontSize: 100
+  m_TabSize: 3
+  m_FontSize: 75
   m_FontStyle: 1
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -623,7 +641,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -749,6 +767,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1148117487, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1148117486, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
 --- !u!4 &265618268 stripped
@@ -1051,11 +1078,11 @@ TextMesh:
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
-  m_TabSize: 4
-  m_FontSize: 100
+  m_TabSize: 3
+  m_FontSize: 75
   m_FontStyle: 1
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -1076,7 +1103,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1545,6 +1572,37 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 09eaa5ba4017827428017ca749322728, type: 2}
+    - target: {fileID: 1220307630, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1220307629, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 3958840721379453722, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 4015950450763555873, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 190375913683747515, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 6021585082939722530, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
 --- !u!114 &527808130 stripped
@@ -1803,6 +1861,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1148117487, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1148117486, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
 --- !u!4 &645196827 stripped
@@ -1976,6 +2043,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1148117487, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1148117486, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
 --- !u!4 &741155660 stripped
@@ -2105,6 +2181,37 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 09eaa5ba4017827428017ca749322728, type: 2}
+    - target: {fileID: 1220307630, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1220307629, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 3958840721379453722, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 4015950450763555873, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 190375913683747515, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 6021585082939722530, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
 --- !u!114 &758752496 stripped
@@ -2171,11 +2278,11 @@ TextMesh:
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
-  m_TabSize: 4
-  m_FontSize: 100
+  m_TabSize: 3
+  m_FontSize: 75
   m_FontStyle: 1
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -2196,7 +2303,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2308,6 +2415,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1148117487, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1148117486, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
 --- !u!4 &814999138 stripped
@@ -2406,7 +2522,7 @@ TextMesh:
   m_FontSize: 50
   m_FontStyle: 1
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -2427,7 +2543,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2773,11 +2889,11 @@ TextMesh:
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
-  m_TabSize: 4
-  m_FontSize: 100
+  m_TabSize: 3
+  m_FontSize: 75
   m_FontStyle: 1
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -2798,7 +2914,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3068,6 +3184,37 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 09eaa5ba4017827428017ca749322728, type: 2}
+    - target: {fileID: 1220307630, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1220307629, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 3958840721379453722, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 4015950450763555873, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 190375913683747515, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 6021585082939722530, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
 --- !u!114 &1187559491 stripped
@@ -3523,6 +3670,37 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 09eaa5ba4017827428017ca749322728, type: 2}
+    - target: {fileID: 1220307630, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1220307629, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 3958840721379453722, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 4015950450763555873, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 190375913683747515, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 6021585082939722530, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
 --- !u!114 &1283934320 stripped
@@ -4021,6 +4199,37 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 09eaa5ba4017827428017ca749322728, type: 2}
+    - target: {fileID: 1220307630, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1220307629, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 3958840721379453722, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 4015950450763555873, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 190375913683747515, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 6021585082939722530, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
 --- !u!114 &1452515039 stripped
@@ -4345,11 +4554,11 @@ TextMesh:
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
-  m_TabSize: 4
-  m_FontSize: 100
+  m_TabSize: 3
+  m_FontSize: 75
   m_FontStyle: 1
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -4370,7 +4579,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4507,6 +4716,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1148117487, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1148117486, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
 --- !u!4 &1669965728 stripped
@@ -6216,7 +6434,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6250,11 +6468,11 @@ TextMesh:
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
-  m_TabSize: 4
-  m_FontSize: 100
+  m_TabSize: 3
+  m_FontSize: 75
   m_FontStyle: 1
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -6709,6 +6927,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1148117487, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1148117486, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
 --- !u!4 &2032340074 stripped
@@ -6915,6 +7142,37 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 09eaa5ba4017827428017ca749322728, type: 2}
+    - target: {fileID: 1220307630, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 1220307629, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 3958840721379453722, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 4015950450763555873, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
+    - target: {fileID: 190375913683747515, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ac1d1218b709c419345cb027342241, type: 3}
+    - target: {fileID: 6021585082939722530, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 14ac1d1218b709c419345cb027342241,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
 --- !u!114 &2120217115 stripped

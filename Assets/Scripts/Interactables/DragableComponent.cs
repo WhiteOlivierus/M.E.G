@@ -9,7 +9,7 @@ public class DragableComponent : MonoBehaviour, IInteractable
     private GameObject graphics;
     private Rigidbody rb;
     private Vector3 screenPoint;
-    private float distanceFromCamera = 3f;
+    private float distanceFromCamera = 0;
     private Vector3 offset;
     private GameManager gm;
 
@@ -26,7 +26,7 @@ public class DragableComponent : MonoBehaviour, IInteractable
     private void Update()
     {
         distanceFromCamera += Input.GetAxis("Mouse ScrollWheel");
-        distanceFromCamera = Mathf.Clamp(distanceFromCamera, 2f, 10f);
+        distanceFromCamera = Mathf.Clamp(distanceFromCamera, -2f, 2f);
     }
 
     public void OnClick()
@@ -38,25 +38,27 @@ public class DragableComponent : MonoBehaviour, IInteractable
 
     public void OnDrag()
     {
-        Vector3 cursorPoint = new Vector3(Screen.width / 2, Screen.height / 2, distanceFromCamera);
+        Vector3 cursorPoint = new Vector3(Screen.width / 2, Screen.height / 2, screenPoint.z + distanceFromCamera);
         Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(cursorPoint) + offset;
         graphics.transform.position = cursorPosition;
     }
 
     public void OnRelease()
     {
-        if (Vector3.Distance(graphics.transform.position, endLocation) > snapRange)
+        bool canCharge = gm.InitGame(this);
+
+        if (!canCharge)
         {
             rb.useGravity = true;
             return;
         }
-        else
+
+        if (Vector3.Distance(graphics.transform.position, endLocation) < snapRange)
         {
             rb.isKinematic = true;
             graphics.transform.position = endLocation;
             graphics.transform.rotation = endRotation;
             graphics.layer = LayerMask.NameToLayer("Default");
-            gm.InitGame(this);
         }
     }
 

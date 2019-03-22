@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+
         for (int i = 0; i < allSliders.Length; i++)
         {
             ScenarioType s = (ScenarioType)i;
@@ -109,14 +111,18 @@ public class GameManager : MonoBehaviour
         if (connectedBattery == null) { return; }
 
         connectedBattery.ReleaseBatery();
+        connectedBattery = null;
     }
 
-    public void InitGame(DragableComponent cb)
+    public bool InitGame(DragableComponent cb)
     {
+        if (connectedBattery != null) { return false; }
+
         connectedBattery = cb;
         turnsLeft = maxTurns;
         turns.text = turnsLeft.ToString();
         currentScenario = allScenarios[Random.Range(0, allScenarios.Length)];
         SetText(goalText, currentScenario.scenarioName);
+        return true;
     }
 }

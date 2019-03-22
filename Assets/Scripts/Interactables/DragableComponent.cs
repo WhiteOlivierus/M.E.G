@@ -5,6 +5,7 @@ public class DragableComponent : MonoBehaviour, IInteractable
 {
     [SerializeField] private float snapRange = 1f;
     private Vector3 endLocation;
+    private Quaternion endRotation;
     private GameObject graphics;
     private Rigidbody rb;
     private Vector3 screenPoint;
@@ -17,6 +18,7 @@ public class DragableComponent : MonoBehaviour, IInteractable
         gm = FindObjectOfType<GameManager>();
         graphics = transform.GetChild(0).gameObject;
         endLocation = gm.chargePort.transform.position;
+        endRotation = gm.chargePort.transform.rotation;
         rb = graphics.GetComponent<Rigidbody>();
         gm = FindObjectOfType<GameManager>();
     }
@@ -52,17 +54,16 @@ public class DragableComponent : MonoBehaviour, IInteractable
         {
             rb.isKinematic = true;
             graphics.transform.position = endLocation;
-            graphics.transform.rotation = Quaternion.identity;
+            graphics.transform.rotation = endRotation;
             graphics.layer = LayerMask.NameToLayer("Default");
             gm.InitGame(this);
         }
     }
 
-    IEnumerator ReleaseBatery()
+    public void ReleaseBatery()
     {
         rb.useGravity = true;
         rb.isKinematic = false;
-        yield return new WaitForSeconds(5f);
-        Destroy(gameObject);
+        Destroy(gameObject, 5f);
     }
 }

@@ -3,17 +3,13 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public Scenario[] allScenarios;
-    [Space]
-    public TextMesh resultText;
-    public TextMesh goalText;
-    [Space]
-    public SliderComponent[] allSliders;
-    [Space]
-    public TextMesh turns;
-    public int maxTurns;
-    [Space]
-    public GameObject chargePort;
+    [SerializeField] private Scenario[] allScenarios = new Scenario[0];
+    [Space] [SerializeField] private TextMesh resultText = new TextMesh();
+    [SerializeField] private TextMesh goalText = new TextMesh();
+    [Space] [SerializeField] private SliderComponent[] allSliders = new SliderComponent[0];
+    [Space] [SerializeField] private TextMesh turns = new TextMesh();
+    [SerializeField] private int maxTurns = 0;
+    [Space] public GameObject chargePort;
 
     private int turnsLeft;
     private Scenario currentScenario;
@@ -30,8 +26,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckGameState()
     {
-        turnsLeft -= 1;
-        turns.text = turnsLeft.ToString();
+        SetTurns();
 
         if (CheckIfOutOfTurns())
         {
@@ -43,6 +38,15 @@ public class GameManager : MonoBehaviour
 
         string scenarioResult = allScenarios[FindClosestScenarioToSliders()].scenarioName;
         SetText(resultText, scenarioResult);
+    }
+
+    private void SetTurns()
+    {
+        turnsLeft -= 1;
+        turns.text = turnsLeft.ToString();
+        Renderer r = connectedBattery.transform.GetChild(0).GetComponent<Renderer>();
+        r.material.SetColor("_EmissionColor", r.material.GetColor("_EmissionColor") * .85f);
+        DynamicGI.SetEmissive(r, r.material.GetColor("_EmissionColor") * .85f);
     }
 
     private void SetText(TextMesh output, string text)
@@ -84,6 +88,11 @@ public class GameManager : MonoBehaviour
             {
                 index = i;
                 lastScore = score;
+
+                if (lastScore == 0)
+                {
+                    Debug.Log("Winner winner chicken diner");
+                }
             }
         }
 
@@ -99,7 +108,7 @@ public class GameManager : MonoBehaviour
     {
         if (connectedBattery == null) { return; }
 
-        connectedBattery.StartCoroutine("ReleaseBatery");
+        connectedBattery.ReleaseBatery();
     }
 
     public void InitGame(DragableComponent cb)

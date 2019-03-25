@@ -5,35 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Unity Editor",
-            "type": "unity",
-            "path": "/d:/Projects/Games/Sustainabiliteam/M.E.G/Library/EditorInstance.json",
-            "request": "launch"
-        },
-        {
-            "name": "Windows Player",
-            "type": "unity",
-            "request": "launch"
-        },
-        {
-            "name": "OSX Player",
-            "type": "unity",
-            "request": "launch"
-        },
-        {
-            "name": "Linux Player",
-            "type": "unity",
-            "request": "launch"
-        },
-        {
-            "name": "iOS Player",
-            "type": "unity",
-            "request": "launch"
-        },
-        {
-            "name": "Android Player",
-            "type": "unity",
-            "request": "launch"
+            "name": "Python: Terminal (external)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "externalTerminal"
         }
-    ]
-}
+    }

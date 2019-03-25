@@ -3,9 +3,9 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Color highlightColor = Color.red;
-    private Renderer lastSelectedSlider;
-    private Color lastSelectedColor;
+    [SerializeField] private Material highlightColor;
+    private Renderer lastSelectedSliderMaterial;
+    private Material lastSelectedMaterial;
     private GameManager gm;
     private Transform hit;
     private bool selectedInteractable;
@@ -53,8 +53,8 @@ public class PlayerController : MonoBehaviour
 
     private void HighlightObject(Transform hit)
     {
-        if (lastSelectedSlider)
-            lastSelectedSlider.material.color = lastSelectedColor;
+        if (lastSelectedSliderMaterial)
+            lastSelectedSliderMaterial.material = lastSelectedMaterial;
 
         if (hit == null) { return; }
 
@@ -62,9 +62,9 @@ public class PlayerController : MonoBehaviour
 
         if (hitRenderer == null) { return; }
 
-        lastSelectedColor = hitRenderer.material.color;
-        hitRenderer.material.color = highlightColor;
-        lastSelectedSlider = hitRenderer;
+        lastSelectedMaterial = hitRenderer.material;
+        hitRenderer.material = highlightColor;
+        lastSelectedSliderMaterial = hitRenderer;
     }
 
     private Transform GetObject(int layerMask)

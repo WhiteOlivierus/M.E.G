@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: c43ee984857c37c428e85b408bf804ce
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: grp_computer
+    100004: grp_computer_control
+    100006: grp_lighting
+    100008: msh_battery_halo1
+    100010: msh_battery_halo2
+    100012: msh_battery_halo3
+    100014: msh_battery_halo4
+    100016: msh_battery_halo5
+    100018: msh_lighting_08
+    400000: //RootNode
+    400002: grp_computer
+    400004: grp_computer_control
+    400006: grp_lighting
+    400008: msh_battery_halo1
+    400010: msh_battery_halo2
+    400012: msh_battery_halo3
+    400014: msh_battery_halo4
+    400016: msh_battery_halo5
+    400018: msh_lighting_08
+    2100000: lambert1
+    2300000: msh_battery_halo1
+    2300002: msh_battery_halo2
+    2300004: msh_battery_halo3
+    2300006: msh_battery_halo4
+    2300008: msh_battery_halo5
+    2300010: msh_lighting_08
+    3300000: msh_battery_halo1
+    3300002: msh_battery_halo2
+    3300004: msh_battery_halo3
+    3300006: msh_battery_halo4
+    3300008: msh_battery_halo5
+    3300010: msh_lighting_08
+    4300000: msh_lighting_08
+    4300002: msh_battery_halo1
+    4300004: msh_battery_halo2
+    4300006: msh_battery_halo3
+    4300008: msh_battery_halo4
+    4300010: msh_battery_halo5
+    6400000: msh_battery_halo1
+    6400002: msh_battery_halo2
+    6400004: msh_battery_halo3
+    6400006: msh_battery_halo4
+    6400008: msh_battery_halo5
+    6400010: msh_lighting_08
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

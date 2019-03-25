@@ -26,4 +26,4 @@ MonoBehaviour:
   - type: 5
     between: {x: 60, y: 70}
   scenarioName: Scenario 2
-  scenario: {fileID: 0}
+  scenario: {fileID: 21300000, guid: 5bddc6dd6b72e634293dbee555a99daa, type: 3}

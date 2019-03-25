@@ -16,14 +16,14 @@ MonoBehaviour:
   - type: 0
     between: {x: 0, y: 10}
   - type: 1
-    between: {x: 0, y: 0}
+    between: {x: 0, y: 10}
   - type: 2
-    between: {x: 0, y: 0}
+    between: {x: 0, y: 10}
   - type: 3
-    between: {x: 0, y: 0}
+    between: {x: 0, y: 10}
   - type: 4
-    between: {x: 0, y: 0}
+    between: {x: 0, y: 10}
   - type: 5
-    between: {x: 0, y: 0}
+    between: {x: 0, y: 10}
   scenarioName: Scenario 1
-  scenario: {fileID: 0}
+  scenario: {fileID: 21300000, guid: 8d0507e8e7744d741a596c80f2fa2a12, type: 3}

@@ -14,6 +14,7 @@ public class SliderComponent : MonoBehaviour, IInteractable
     private TextMesh monitor;
     private TextMesh precisionMonitor;
     private float stepping = .05f;
+    public Color hightlightColor { get; set; } = Color.red;
 
     private void Awake()
     {
@@ -27,7 +28,7 @@ public class SliderComponent : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        stepping = (Vector3.Distance(minSliderPosition, maxSliderPosition) / maxRange) / 2f;
+        stepping = (Vector3.Distance(minSliderPosition, maxSliderPosition) / maxRange);
         CalculateValueOfSlider();
         monitor.text = value.ToString();
     }
@@ -46,7 +47,7 @@ public class SliderComponent : MonoBehaviour, IInteractable
         LogValue();
     }
 
-    public void OnRelease() { }
+    public void OnRelease() { return; }
 
     private void MoveSlider()
     {
@@ -101,15 +102,19 @@ public class SliderComponent : MonoBehaviour, IInteractable
         {
             case -1:
                 precisionMonitor.text = "+";
+                monitor.color = Color.red;
                 break;
             case 0:
                 precisionMonitor.text = "OK";
+                monitor.color = Color.green;
                 break;
             case 1:
                 precisionMonitor.text = "-";
+                monitor.color = Color.red;
                 break;
             default:
                 precisionMonitor.text = "";
+                monitor.color = Color.black;
                 break;
         }
     }

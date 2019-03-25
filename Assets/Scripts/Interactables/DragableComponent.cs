@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DragableComponent : MonoBehaviour, IInteractable
 {
-    [SerializeField] private float snapRange = 1f;
+    private float snapRange = 0.1f;
     private Vector3 endLocation;
     private Quaternion endRotation;
     private GameObject graphics;
@@ -12,6 +12,7 @@ public class DragableComponent : MonoBehaviour, IInteractable
     private float distanceFromCamera = 0;
     private Vector3 offset;
     private GameManager gm;
+    public Color hightlightColor { get; set; } = Color.red;
 
     private void Awake()
     {
@@ -27,6 +28,7 @@ public class DragableComponent : MonoBehaviour, IInteractable
     {
         distanceFromCamera += Input.GetAxis("Mouse ScrollWheel");
         distanceFromCamera = Mathf.Clamp(distanceFromCamera, -2f, 2f);
+        InRange();
     }
 
     public void OnClick()
@@ -41,6 +43,11 @@ public class DragableComponent : MonoBehaviour, IInteractable
         Vector3 cursorPoint = new Vector3(Screen.width / 2, Screen.height / 2, screenPoint.z + distanceFromCamera);
         Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(cursorPoint) + offset;
         graphics.transform.position = cursorPosition;
+
+        if (Vector3.Distance(graphics.transform.position, endLocation) < snapRange)
+        {
+
+        }
     }
 
     public void OnRelease()
@@ -53,19 +60,35 @@ public class DragableComponent : MonoBehaviour, IInteractable
             return;
         }
 
-        if (Vector3.Distance(graphics.transform.position, endLocation) < snapRange)
-        {
-            rb.isKinematic = true;
-            graphics.transform.position = endLocation;
-            graphics.transform.rotation = endRotation;
-            graphics.layer = LayerMask.NameToLayer("Default");
-        }
+        if (!InRange()) { return; }
+
+        rb.isKinematic = true;
+        graphics.transform.position = endLocation;
+        graphics.transform.rotation = endRotation;
+        graphics.layer = LayerMask.NameToLayer("Default");
+
     }
 
-    public void ReleaseBatery()
+    public void Release()
     {
         rb.useGravity = true;
         rb.isKinematic = false;
         Destroy(gameObject, 5f);
     }
+
+    public bool InRange()
+    {
+        print(Vector3.Distance(graphics.transform.position, endLocation).ToString() + ":" + snapRange.ToString());
+        if (Vector3.Distance(graphics.transform.position, endLocation) <= snapRange)
+        {
+            hightlightColor = Color.green;
+            return true;
+        }
+        else
+        {
+            hightlightColor = Color.red;
+            return false;
+        }
+    }
+
 }

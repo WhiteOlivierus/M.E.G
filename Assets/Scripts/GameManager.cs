@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Scenario[] allScenarios = new Scenario[0];
     [Space] [SerializeField] private TextMesh resultText = new TextMesh();
     [SerializeField] private TextMesh goalText = new TextMesh();
+    [SerializeField] private SpriteRenderer resultSprite = new SpriteRenderer();
     [Space] [SerializeField] private SliderComponent[] allSliders = new SliderComponent[0];
     [Space] [SerializeField] private TextMesh turns = new TextMesh();
     [SerializeField] private int maxTurns = 0;
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Confined;
 
         for (int i = 0; i < allSliders.Length; i++)
         {
@@ -33,13 +34,27 @@ public class GameManager : MonoBehaviour
         if (CheckIfOutOfTurns())
         {
             ReleaseBattery();
-            SetText(goalText, "Replace batery for next goal");
-            SetText(resultText, "None");
+            ShowResult(-1);
             return;
         }
 
-        string scenarioResult = allScenarios[FindClosestScenarioToSliders()].scenarioName;
-        SetText(resultText, scenarioResult);
+        ShowResult(FindClosestScenarioToSliders());
+    }
+
+    private void ShowResult(int index)
+    {
+        if (index >= 0)
+        {
+            string scenarioResult = allScenarios[index].scenarioName;
+            resultSprite.sprite = allScenarios[index].scenario;
+            SetText(resultText, scenarioResult);
+        }
+        else
+        {
+            SetText(goalText, "Replace batery for next goal");
+            SetText(resultText, "None");
+            resultSprite.sprite = null;
+        }
     }
 
     private void SetTurns()
@@ -63,7 +78,6 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < allScenarios.Length; i++)
         {
-            // Scenario currentScenario = allScenarios[i];
             int score = 0;
 
             for (int j = 0; j < allSliders.Length; j++)
@@ -110,7 +124,12 @@ public class GameManager : MonoBehaviour
     {
         if (connectedBattery == null) { return; }
 
-        connectedBattery.ReleaseBatery();
+        foreach (SliderComponent slider in allSliders)
+        {
+            slider.SetPrecisionMonitor(-3);
+        }
+
+        connectedBattery.Release();
         connectedBattery = null;
     }
 

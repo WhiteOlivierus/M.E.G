@@ -3,11 +3,12 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Material highlightColor;
+    [SerializeField] private Material highlightMaterial;
     private Renderer lastSelectedSliderMaterial;
     private Material lastSelectedMaterial;
     private GameManager gm;
     private Transform hit;
+    private IInteractable objectToInteract;
     private bool selectedInteractable;
 
     private void Awake()
@@ -20,17 +21,16 @@ public class PlayerController : MonoBehaviour
         if (!selectedInteractable)
         { hit = GetObject(1 << LayerMask.NameToLayer("Interactables")); }
 
-        HighlightObject(hit);
+        objectToInteract = hit.parent.GetComponent<IInteractable>();
 
-        selectedInteractable = InteractWithHit(hit);
+        highlightMaterial.color = objectToInteract.hightlightColor;
+        HighlightObject(hit, highlightMaterial);
+
+        selectedInteractable = InteractWithHit(objectToInteract);
     }
 
-    private bool InteractWithHit(Transform hit)
+    private bool InteractWithHit(IInteractable interactable)
     {
-        if (hit == null) { return false; }
-
-        IInteractable interactable = hit.parent.GetComponent<IInteractable>();
-
         if (interactable == null) { return false; }
 
         if (Input.GetMouseButtonDown(0))
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         return false;
     }
 
-    private void HighlightObject(Transform hit)
+    private void HighlightObject(Transform hit, Material highlightMaterial)
     {
         if (lastSelectedSliderMaterial)
             lastSelectedSliderMaterial.material = lastSelectedMaterial;
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         if (hitRenderer == null) { return; }
 
         lastSelectedMaterial = hitRenderer.material;
-        hitRenderer.material = highlightColor;
+        hitRenderer.material = highlightMaterial;
         lastSelectedSliderMaterial = hitRenderer;
     }
 

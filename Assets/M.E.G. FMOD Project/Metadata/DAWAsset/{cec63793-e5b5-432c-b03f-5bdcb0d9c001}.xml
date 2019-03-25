@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="DAWAsset" id="{cec63793-e5b5-432c-b03f-5bdcb0d9c001}">
+		<property name="assetPath">
+			<value>Game Jam Sessions 2019.RPP.link/GJS_Player_Typing_Loop.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>3</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8cc72703-60d7-48cb-833b-443d08fd640e}</destination>
+		</relationship>
+		<relationship name="project">
+			<destination>{df3fcf1e-2ac8-4fb9-bc1c-a7a251661911}</destination>
+		</relationship>
+	</object>
+</objects>

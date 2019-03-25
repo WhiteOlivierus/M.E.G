@@ -78,7 +78,6 @@ public class DragableComponent : MonoBehaviour, IInteractable
 
     public bool InRange()
     {
-        print(Vector3.Distance(graphics.transform.position, endLocation).ToString() + ":" + snapRange.ToString());
         if (Vector3.Distance(graphics.transform.position, endLocation) <= snapRange)
         {
             hightlightColor = Color.green;

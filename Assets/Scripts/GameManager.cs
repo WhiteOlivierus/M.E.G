@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     public void CheckGameState()
     {
+        if (connectedBattery == null) { return; }
+
         SetTurns();
 
         if (CheckIfOutOfTurns())

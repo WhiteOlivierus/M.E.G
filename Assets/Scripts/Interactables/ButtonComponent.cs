@@ -19,8 +19,9 @@ public class ButtonComponent : MonoBehaviour, IInteractable
 
     public void OnClick()
     {
-        gm.CheckGameState();
+        RuntimeManager.PlayOneShot(Event);
         button.start();
+        gm.CheckGameState();
     }
 
     public void OnDrag() { }

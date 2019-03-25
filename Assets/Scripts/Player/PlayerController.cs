@@ -21,12 +21,15 @@ public class PlayerController : MonoBehaviour
         if (!selectedInteractable)
         { hit = GetObject(1 << LayerMask.NameToLayer("Interactables")); }
 
-        objectToInteract = hit.parent.GetComponent<IInteractable>();
+        if (hit != null)
+        {
+            objectToInteract = hit.parent.GetComponent<IInteractable>();
 
-        highlightMaterial.color = objectToInteract.hightlightColor;
-        HighlightObject(hit, highlightMaterial);
+            highlightMaterial.color = objectToInteract.hightlightColor;
+            HighlightObject(hit, highlightMaterial);
 
-        selectedInteractable = InteractWithHit(objectToInteract);
+            selectedInteractable = InteractWithHit(objectToInteract);
+        }
     }
 
     private bool InteractWithHit(IInteractable interactable)

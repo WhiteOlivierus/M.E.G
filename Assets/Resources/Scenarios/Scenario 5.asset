@@ -10,20 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6a8e3c8da7a6b84aa2ee966a06630d6, type: 3}
-  m_Name: Scenario 11
+  m_Name: Scenario 5
   m_EditorClassIdentifier: 
   sliders:
   - type: 0
-    between: {x: 90, y: 100}
+    between: {x: 5, y: 20}
   - type: 1
-    between: {x: 90, y: 100}
+    between: {x: 20, y: 30}
   - type: 2
-    between: {x: 90, y: 100}
+    between: {x: 10, y: 20}
   - type: 3
-    between: {x: 80, y: 90}
+    between: {x: 70, y: 90}
   - type: 4
-    between: {x: 90, y: 100}
+    between: {x: 20, y: 30}
   - type: 5
-    between: {x: 75, y: 85}
-  scenarioName: Utopia world
+    between: {x: 60, y: 80}
+  scenarioName: Post apocolyptic
   scenario: {fileID: 0}
+  earthValues:
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0

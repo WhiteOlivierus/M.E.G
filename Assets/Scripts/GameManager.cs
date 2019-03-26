@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private Scenario[] allScenarios = new Scenario[0];
+    private Scenario[] allScenarios = new Scenario[0];
     [Space] [SerializeField] private TextMesh resultText = new TextMesh();
     [SerializeField] private TextMesh goalText = new TextMesh();
     [SerializeField] private SpriteRenderer resultSprite = new SpriteRenderer();
@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviour
     private int turnsLeft;
     private Scenario currentScenario;
     private DragableComponent connectedBattery;
+
+    void Awake()
+    {
+        allScenarios = Resources.LoadAll<Scenario>("Scenarios");
+    }
 
     void Start()
     {

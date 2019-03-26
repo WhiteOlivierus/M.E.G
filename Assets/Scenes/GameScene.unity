@@ -3830,9 +3830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837520dcb1c57cf48bf0e5a185786f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allScenarios:
-  - {fileID: 0}
-  - {fileID: 11400000, guid: 0250612c0f37d884084ae5d8346abd33, type: 2}
   resultText: {fileID: 1908082990}
   goalText: {fileID: 430473696}
   resultSprite: {fileID: 2096328827}

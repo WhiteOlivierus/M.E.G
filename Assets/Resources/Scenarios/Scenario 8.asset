@@ -10,20 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6a8e3c8da7a6b84aa2ee966a06630d6, type: 3}
-  m_Name: Scenario 0
+  m_Name: Scenario 8
   m_EditorClassIdentifier: 
   sliders:
   - type: 0
-    between: {x: 50, y: 50}
+    between: {x: 75, y: 85}
   - type: 1
-    between: {x: 50, y: 50}
+    between: {x: 10, y: 25}
   - type: 2
-    between: {x: 50, y: 50}
+    between: {x: 0, y: 10}
   - type: 3
-    between: {x: 50, y: 50}
+    between: {x: 85, y: 95}
   - type: 4
     between: {x: 50, y: 50}
   - type: 5
-    between: {x: 50, y: 50}
-  scenarioName: default
-  scenario: {fileID: 21300000, guid: 5bddc6dd6b72e634293dbee555a99daa, type: 3}
+    between: {x: 15, y: 25}
+  scenarioName: Resource drained world
+  scenario: {fileID: 0}
+  earthValues:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1

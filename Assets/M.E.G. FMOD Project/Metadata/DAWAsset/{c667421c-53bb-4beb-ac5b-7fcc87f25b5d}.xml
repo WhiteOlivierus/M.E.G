@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="DAWAsset" id="{c667421c-53bb-4beb-ac5b-7fcc87f25b5d}">
+		<property name="assetPath">
+			<value>GJS Narrative.RPP.link/GEM_Narrative_Intro_God.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>73.662750000000003</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8cc72703-60d7-48cb-833b-443d08fd640e}</destination>
+		</relationship>
+		<relationship name="project">
+			<destination>{29df4ce6-dd80-41f4-861f-5dec1a545a81}</destination>
+		</relationship>
+	</object>
+</objects>

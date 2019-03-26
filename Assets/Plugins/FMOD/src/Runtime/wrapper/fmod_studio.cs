@@ -157,6 +157,11 @@ namespace FMOD.Studio
     {
         public uint data1;  /* The first half of the ID. */
         public uint data2;  /* The second half of the ID. */
+
+        public void setParameterByID(EventInstance playerState, int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     [StructLayout(LayoutKind.Sequential)]

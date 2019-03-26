@@ -1724,6 +1724,11 @@ PrefabInstance:
       propertyPath: Event
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
 --- !u!114 &527808130 stripped
@@ -2240,6 +2245,11 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
     - target: {fileID: 2929133993708562801, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
@@ -3299,6 +3309,11 @@ PrefabInstance:
       propertyPath: Event
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
 --- !u!114 &1187559491 stripped
@@ -3657,6 +3672,11 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4264,6 +4284,11 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7347,6 +7372,11 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -1,8 +1,7 @@
-﻿using System;
+﻿ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using FMODUnity;
-using FMOD;
 
 public class SliderComponent : MonoBehaviour, IInteractable
 {
@@ -21,12 +20,20 @@ public class SliderComponent : MonoBehaviour, IInteractable
     [EventRef]
     public string Event = "";
     FMOD.Studio.EventInstance slide;
+    FMOD.Studio.EventDescription slideEventDescription;
+    FMOD.Studio.PARAMETER_DESCRIPTION sliderParameterDescription;
+    FMOD.Studio.PARAMETER_ID slidingParameterId, sliderParameterId;
+
 
     private void Awake()
     {
-        slide = RuntimeManager.CreateInstance(Event);
-        RuntimeManager.PlayOneShot(Event);
+        slide = FMODUnity.RuntimeManager.CreateInstance(Event);
+        slideEventDescription = FMODUnity.RuntimeManager.GetEventDescription(Event);
+        slide.getDescription(out slideEventDescription);
+        slideEventDescription.getParameterDescriptionByName("Sliding", out sliderParameterDescription);
         slide.start();
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(slide, GetComponent<Transform>(), GetComponent<Rigidbody>());
+        slidingParameterId = sliderParameterDescription.id;
 
         graphics = transform.GetChild(0).transform;
         minSliderPosition = transform.GetChild(1).transform.localPosition;
@@ -46,20 +53,28 @@ public class SliderComponent : MonoBehaviour, IInteractable
     public void OnClick()
     {
         SetMousePosition();
-        slide.setParameterByName("Sliding", 1f);
+        //RuntimeManager.PlayOneShot(PlayerStateEvent);
 
+       //slide.setParameterByID(Sliding, 0f);
     }
 
     public void OnDrag()
     {
+
         MoveSlider();
         SetMousePosition();
         UpdateSlider();
         CalculateValueOfSlider();
         LogValue();
+        slide.setParameterByName("Sliding", 0);
+        UnityEngine.Debug.Log(0);
     }
 
-    public void OnRelease() { return; }
+    public void OnRelease() {
+
+        slide.setParameterByName("Sliding", 1);
+        return; }
+
 
     private void MoveSlider()
     {

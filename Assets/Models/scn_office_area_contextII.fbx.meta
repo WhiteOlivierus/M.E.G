@@ -549,6 +549,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: mat_blackPlastic.001
+    second: {fileID: 2100000, guid: fc3dbee4bafa6af429788548a09cd379, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_cabinets
     second: {fileID: 2100000, guid: 7247ea0582de1084db1826d818e93795, type: 2}
   - first:

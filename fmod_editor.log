@@ -1,13 +1,14 @@
 [LOG] System::create                           : Header version = 2.00.00. Current version = 2.00.00.
-[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0x0.
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20000 (101145), maxchannels=256, flags=0x00020000
-[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
-[LOG] OutputCoreAudio::init                    : Output running 2 channels at 96000Hz sample rate.
-[LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=96000, nAvgBytesPerSec=768000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 8192 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [WRN] SystemI::init                            : Output requires a sample rate of 96000Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x1400ee008 isAsync 0 updatePeriod 0.02
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 00000000572B0A48 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,59 +16,1301 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217C4E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217C4E8
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004217D268 : node = 000000005F09ABF0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D268
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004217D0B8 : node = 000000005F09B730
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005F09AD00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D268
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D0B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005F09B840
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D0B8
+[LOG] SoundI::getSubSound                      : sound 000000004217D268.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D418
+[LOG] SoundI::getSubSound                      : sound 000000004217D0B8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D418
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B9C78
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B9C78
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000446B84D8 : node = 000000005F09AD30
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B84D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005F09AE40
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000446B89E8 : node = 000000005F09A330
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B84D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B89E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005F09A440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B89E8
+[LOG] SoundI::getSubSound                      : sound 00000000446B84D8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 00000000446B89E8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618718
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618718
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618568
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618568
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004217D0B8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (00000000446B9C78)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004E618C28 : node = 000000005F09AE70
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618C28
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000051E14D38 : node = 000000005F09B730
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005F09AF80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618C28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14D38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005F09B840
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14D38
+[LOG] SoundI::getSubSound                      : sound 000000004E618C28.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 0000000051E14D38.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14678
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14678
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E149D8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E149D8
+[LOG] SoundI::release                          : GJS_Player_Button_Process (00000000446B89E8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E538)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618568)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000001B60C5F8 : node = 000000005F09A330
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C5F8
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     setdata soundi = 000000001B60C958 : node = 0000000041C4D440
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004217D268)
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005F09A440
+[LOG] SoundI::release                          :         GJS_Player_Button_Process (000000004739B7B8)
+[LOG] SystemI::createSoundInternal             :         exinfo->inclusionlistnum   = 1
+[LOG] SoundI::release                          :         GJS_Player_Button_Process (000000004217D418)
+[LOG] SystemI::createSoundInternal             :         exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C5F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C958
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C958
+[LOG] SoundI::getSubSound                      : sound 000000001B60C5F8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000000001B60C958.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60CB08
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60CB08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D0B8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D0B8
+[LOG] SoundI::release                          : GJS_Player_Button_Process (0000000051E14D38)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E6D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E149D8)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004217D268 : node = 0000000041C4D6C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D268
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004217D418 : node = 0000000041C4D580
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D7D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D268
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D418
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D690
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D418
+[LOG] SoundI::getSubSound                      : sound 000000004217D268.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000000004217D418.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005F3E12A8
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005F3E12A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005F3DFB08
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005F3DFB08
+[LOG] SoundI::release                          : GJS_Player_Button_Process (00000000446B84D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739EA18)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618718)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001B60C958)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E878)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004217D0B8)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000446B9C78 : node = 0000000041C4DA80
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B9C78
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000446B84D8 : node = 0000000041C4D440
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DB90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B9C78
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B84D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B84D8
+[LOG] SoundI::getSubSound                      : sound 00000000446B9C78.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B89E8
+[LOG] SoundI::getSubSound                      : sound 00000000446B84D8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B89E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618568
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618568
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004217D418)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739EBB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000005F3DFB08)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618C28)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E14678)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004E618718 : node = 0000000041C4D580
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618718
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004E618C28 : node = 0000000041C4D940
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D690
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618718
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618C28
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DA50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618C28
+[LOG] SoundI::getSubSound                      : sound 000000004E618718.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14678
+[LOG] SoundI::getSubSound                      : sound 000000004E618C28.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14678
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E149D8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E149D8
+[LOG] SoundI::release                          : GJS_Player_Button_Process (00000000446B84D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739EA18)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618568)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001B60C5F8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E538)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000001B60CB08)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000051E14D38 : node = 0000000041C4D800
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14D38
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000000001B60C5F8 : node = 0000000041C4D440
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14D38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C5F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C5F8
+[LOG] SoundI::getSubSound                      : sound 0000000051E14D38.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000000001B60C5F8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C958
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C958
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60CB08
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60CB08
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618C28)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739EBB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E149D8)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004217D268)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E6D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000005F3E12A8)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004217D0B8 : node = 0000000041C4D6C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D0B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004217D268 : node = 0000000041C4D940
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D7D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D0B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D268
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DA50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D268
+[LOG] SoundI::release                          : GJS_Player_Button_Process (00000000446B9C78)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E878)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (00000000446B89E8)
+[LOG] SoundI::getSubSound                      : sound 000000004217D0B8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000000004217D268.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D418
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D418
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005F3DFB08
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005F3DFB08
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001B60C5F8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739EA18)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000001B60CB08)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618718)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E14678)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005F3E12A8 : node = 0000000041C4D440
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005F3E12A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004E618568 : node = 0000000041C4D580
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005F3E12A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618568
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D690
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618568
+[LOG] SoundI::getSubSound                      : sound 000000005F3E12A8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000000004E618568.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618718
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618718
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618C28
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618C28
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004217D268)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739EBB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000005F3DFB08)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (0000000051E14D38)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E538)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000001B60C958)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004217D0B8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E6D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004217D418)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000051E14678 : node = 0000000041C4D6C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14678
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000051E149D8 : node = 0000000041C4D800
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D7D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14678
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E149D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E149D8
+[LOG] SoundI::getSubSound                      : sound 0000000051E14678.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 0000000051E149D8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14D38
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14D38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C5F8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C5F8
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618568)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E878)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618C28)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000005F3E12A8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618718)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000001B60C958 : node = 0000000041C4DA80
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C958
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     setdata soundi = 000000001B60CB08 : node = 0000000041C4D940
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DB90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C958
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60CB08
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DA50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60CB08
+[LOG] SoundI::getSubSound                      : sound 000000001B60C958.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618568
+[LOG] SoundI::getSubSound                      : sound 000000001B60CB08.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618568
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618718
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618718
+[LOG] SoundI::release                          : GJS_Player_Button_Process (0000000051E149D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E6D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000001B60C5F8)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (0000000051E14678)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E538)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E14D38)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001B60CB08)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618718)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001B60C958)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739EA18)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618568)
+[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004E618568 : node = 0000000041C4D440
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618568
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004E618718 : node = 0000000041C4D580
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618568
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618718
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D690
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618718
+[LOG] SoundI::getSubSound                      : sound 000000004E618568.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000000004E618718.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618C28
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618C28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C5F8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C5F8
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618568)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E878)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618C28)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618718)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000001B60C5F8)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000001B60C5F8 : node = 0000000041C4D440
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C5F8
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 000000001B60C958 : node = 0000000041C4D800
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C5F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C958
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C958
+[LOG] SoundI::getSubSound                      : sound 000000001B60C5F8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000000001B60C958.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60CB08
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60CB08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618568
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618568
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004E618718 : node = 0000000041C4DA80
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618718
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004E618C28 : node = 0000000041C4D580
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DB90
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618718
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618C28
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D690
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618C28
+[LOG] SoundI::getSubSound                      : sound 000000004E618718.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14678
+[LOG] SoundI::getSubSound                      : sound 000000004E618C28.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14678
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E149D8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E149D8
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001B60C958)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739EA18)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618568)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001B60C5F8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739B7B8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000001B60CB08)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618C28)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E538)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E149D8)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618718)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E14678)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000051E14D38 : node = 0000000041C4D440
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14D38
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000051E149D8 : node = 0000000041C4D800
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14D38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E149D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E149D8
+[LOG] SoundI::getSubSound                      : sound 0000000051E14D38.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14678
+[LOG] SoundI::getSubSound                      : sound 0000000051E149D8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14678
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618C28
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618C28
+[LOG] SoundI::release                          : GJS_Player_Button_Process (0000000051E149D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739B7B8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618C28)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (0000000051E14D38)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E538)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E14678)
+[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004E618568 : node = 0000000041C4D440
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618568
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004E618718 : node = 0000000041C4D800
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618568
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618718
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618718
+[LOG] SoundI::getSubSound                      : sound 000000004E618568.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000000004E618718.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618C28
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618C28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14678
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14678
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618718)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E538)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E14678)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618568)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618C28)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000051E14678 : node = 0000000041C4D940
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14678
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000051E149D8 : node = 0000000041C4DA80
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DA50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14678
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E149D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DB90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E149D8
+[LOG] SoundI::getSubSound                      : sound 0000000051E14678.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 0000000051E149D8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14D38
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14D38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618568
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618568
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004E618718 : node = 0000000041C4D440
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618718
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004E618C28 : node = 0000000041C4D580
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618718
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618C28
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D690
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618C28
+[LOG] SoundI::getSubSound                      : sound 000000004E618718.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B9C78
+[LOG] SoundI::getSubSound                      : sound 000000004E618C28.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B9C78
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B84D8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B84D8
+[LOG] SoundI::release                          : GJS_Player_Button_Process (0000000051E149D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E538)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618568)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000446B89E8 : node = 0000000041C4D6C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B89E8
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004217D0B8 : node = 0000000041C4D800
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D7D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B89E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D0B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D0B8
+[LOG] SoundI::getSubSound                      : sound 00000000446B89E8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000000004217D0B8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D268
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D268
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D418
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D418
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618C28)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E878)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (00000000446B84D8)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000001B60CB08 : node = 0000000041C4D580
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60CB08
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     setdata soundi = 000000001B60C5F8 : node = 0000000041C4DA80
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D690
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60CB08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C5F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DB90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C5F8
+[LOG] SoundI::getSubSound                      : sound 000000001B60CB08.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000000001B60C5F8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001B60C958
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001B60C958
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005F3DFB08
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005F3DFB08
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004217D0B8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739B7B8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004217D418)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (0000000051E14678)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E14D38)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005F3E12A8 : node = 0000000041C4D800
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005F3E12A8
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000051E14678 : node = 0000000041C4D940
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005F3E12A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14678
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DA50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14678
+[LOG] SoundI::getSubSound                      : sound 000000005F3E12A8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E149D8
+[LOG] SoundI::getSubSound                      : sound 0000000051E14678.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E149D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000051E14D38
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000051E14D38
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001B60C5F8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739EA18)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000005F3DFB08)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618718)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E6D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (00000000446B9C78)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004E618718 : node = 0000000041C4D440
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618718
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004E618568 : node = 0000000041C4DA80
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618718
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618568
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DB90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618568
+[LOG] SoundI::getSubSound                      : sound 000000004E618718.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004E618C28
+[LOG] SoundI::getSubSound                      : sound 000000004E618568.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004E618C28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D418
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D418
+[LOG] SoundI::release                          : GJS_Player_Button_Process (00000000446B89E8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E538)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004217D268)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (0000000051E14678)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E14D38)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004217D0B8 : node = 0000000041C4D940
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D0B8
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004217D268 : node = 0000000041C4D6C0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000051DF5088.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4DA50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D0B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004217D268
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4262592
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 31424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000041C4D7D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004217D268
+[LOG] SoundI::getSubSound                      : sound 000000004217D0B8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B9C78
+[LOG] SoundI::getSubSound                      : sound 000000004217D268.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B9C78
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000446B84D8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000446B84D8
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001B60CB08)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E878)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000001B60C958)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618568)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739EA18)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004217D418)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000005F3E12A8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739B7B8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (0000000051E149D8)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004E618718)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E6D8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004E618C28)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004217D268)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739E538)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (00000000446B84D8)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000004217D0B8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000004739DEB8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (00000000446B9C78)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::finishLoadBank                  : Bank with guid {06a4e2f5-3051-04e3-3962-d1f3ce1c317e} has already been loaded
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::finishLoadBank                  : Bank with guid {06a4e2f5-3051-04e3-3962-d1f3ce1c317e} has already been loaded
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] SoundI::release                          : GEM_Narrative_Intro_Player (0x14f0d2828)
-[LOG] SoundI::release                          :     GEM_Narrative_Intro_Player (0x14f312778)
-[LOG] SoundI::release                          :     GEM_Narrative_Intro_Player (0x14f312908)
-[LOG] SoundI::release                          : GEM_Ambiance (0x181183a58)
-[LOG] SoundI::release                          :     GEM_Ambiance (0x14efa08c8)
-[LOG] SoundI::release                          :     GEM_Ambiance (0x181171268)
-[LOG] SoundI::release                          : GEM_Narrative_Intro_God (0x14f37c6a8)
-[LOG] SoundI::release                          :     GEM_Narrative_Intro_God (0x14f09dec8)
-[LOG] SoundI::release                          :     GEM_Narrative_Intro_God (0x156048228)
-[LOG] SoundI::release                          :  (0x1560c5498)
-[LOG] SoundI::release                          :     GEM_Narrative_God_Good (0x1560c5608)
-[LOG] SoundI::release                          :  (0x1560c3318)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Good_1 (0x1560c3488)
-[LOG] SoundI::release                          :  (0x15604fd58)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Good_2 (0x15604fec8)
-[LOG] SoundI::release                          :  (0x15606a468)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Good_3 (0x15606a5d8)
-[LOG] SoundI::release                          :  (0x14f3de748)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Good_4 (0x15604fa18)
-[LOG] SoundI::release                          :  (0x1560d5b38)
-[LOG] SoundI::release                          :     GEM_Slider_Static (0x14f061c98)
-[LOG] SoundI::release                          :  (0x15606a918)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Bad_1 (0x15606aa88)
-[LOG] SoundI::release                          :  (0x15606adc8)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Bad_2 (0x15606af38)
-[LOG] SoundI::release                          :  (0x1560d59c8)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Bad_3 (0x14f061958)
-[LOG] SoundI::release                          :  (0x156054cc8)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Bad_4 (0x156054e38)
-[LOG] SoundI::release                          :  (0x15604d278)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Average_1 (0x15604d3e8)
-[LOG] SoundI::release                          :  (0x15607d928)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Average_2 (0x15607da98)
-[LOG] SoundI::release                          :  (0x14f00eec8)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Average_3 (0x14f00f038)
-[LOG] SoundI::release                          :  (0x16a6234a8)
-[LOG] SoundI::release                          :     GEM_Narrative_Player_Average_4 (0x16a623618)
-[LOG] SoundI::release                          :  (0x156019968)
-[LOG] SoundI::release                          :     GEM_Narrative_God_Bad (0x156019ad8)
-[LOG] SoundI::release                          :  (0x156055178)
-[LOG] SoundI::release                          :     GEM_Narrative_God_Average (0x1560552e8)
+[LOG] SoundI::release                          : GEM_Narrative_Intro_Player (000000004217D928)
+[LOG] SoundI::release                          :     GEM_Narrative_Intro_Player (000000001B6242A8)
+[LOG] SoundI::release                          :     GEM_Narrative_Intro_Player (000000004217DC88)
+[LOG] SoundI::release                          : GEM_Ambiance (000000004217E198)
+[LOG] SoundI::release                          :     GEM_Ambiance (000000001B623F68)
+[LOG] SoundI::release                          :     GEM_Ambiance (000000004217C4E8)
+[LOG] SoundI::release                          : GEM_Narrative_Intro_God (000000004217D5C8)
+[LOG] SoundI::release                          :     GEM_Narrative_Intro_God (000000001B624E08)
+[LOG] SoundI::release                          :     GEM_Narrative_Intro_God (000000004217C848)
+[LOG] SoundI::release                          :  (00000000475582E8)
+[LOG] SoundI::release                          :     GEM_Narrative_God_Good (000000001B68DFD8)
+[LOG] SoundI::release                          :  (00000000527944D8)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Good_1 (000000001B624788)
+[LOG] SoundI::release                          :  (0000000047556EC8)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Good_2 (000000001B68D618)
+[LOG] SoundI::release                          :  (0000000052794928)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Good_3 (000000001B624AC8)
+[LOG] SoundI::release                          :  (0000000047556D58)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Good_4 (000000001B68DE38)
+[LOG] SoundI::release                          :  (0000000047556A78)
+[LOG] SoundI::release                          :     GEM_Slider_Static (000000001B68D478)
+[LOG] SoundI::release                          :  (0000000052794A98)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Bad_1 (000000001B624C68)
+[LOG] SoundI::release                          :  (0000000010E4A208)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Bad_2 (000000001B623DC8)
+[LOG] SoundI::release                          :  (0000000047556908)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Bad_3 (000000001B68E658)
+[LOG] SoundI::release                          :  (0000000042197278)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Bad_4 (000000001B623C28)
+[LOG] SoundI::release                          :  (00000000527965E8)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Average_1 (000000001B6245E8)
+[LOG] SoundI::release                          :  (0000000042196B48)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Average_2 (000000001B68E4B8)
+[LOG] SoundI::release                          :  (0000000042196CB8)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Average_3 (000000001B625488)
+[LOG] SoundI::release                          :  (0000000047557488)
+[LOG] SoundI::release                          :     GEM_Narrative_Player_Average_4 (000000001B68E318)
+[LOG] SoundI::release                          :  (0000000047556BE8)
+[LOG] SoundI::release                          :     GEM_Narrative_God_Bad (000000001B68EE78)
+[LOG] SoundI::release                          :  (0000000042196E28)
+[LOG] SoundI::release                          :     GEM_Narrative_God_Average (000000001B624448)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
@@ -76,10 +1319,4 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)

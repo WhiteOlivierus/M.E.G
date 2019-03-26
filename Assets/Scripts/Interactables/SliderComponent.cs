@@ -67,13 +67,13 @@ public class SliderComponent : MonoBehaviour, IInteractable
         CalculateValueOfSlider();
         LogValue();
         slide.setParameterByName("Sliding", 0);
-        UnityEngine.Debug.Log(0);
     }
 
-    public void OnRelease() {
-
+    public void OnRelease() 
+    {
         slide.setParameterByName("Sliding", 1);
-        return; }
+        return; 
+    }
 
 
     private void MoveSlider()

@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6a8e3c8da7a6b84aa2ee966a06630d6, type: 3}
-  m_Name: Scenario 1
+  m_Name: Scenario 0
   m_EditorClassIdentifier: 
   sliders:
   - type: 0
-    between: {x: 70, y: 80}
+    between: {x: 50, y: 50}
   - type: 1
-    between: {x: 0, y: 20}
+    between: {x: 50, y: 50}
   - type: 2
     between: {x: 50, y: 50}
   - type: 3
     between: {x: 50, y: 50}
   - type: 4
-    between: {x: 80, y: 90}
+    between: {x: 50, y: 50}
   - type: 5
-    between: {x: 10, y: 20}
-  scenarioName: Scenario 2
+    between: {x: 50, y: 50}
+  scenarioName: default
   scenario: {fileID: 21300000, guid: 5bddc6dd6b72e634293dbee555a99daa, type: 3}

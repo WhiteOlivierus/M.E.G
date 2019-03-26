@@ -2408,6 +2408,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+--- !u!114 &844115000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844114998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0705dc8333f46c24e99851eb0015af88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  earthsMaterial:
+  - {fileID: 2100000, guid: 7484ed572759dc948b3359df7238ab5a, type: 2}
+  - {fileID: 2100000, guid: 15dd3d5f0e690434c9dc8c4922ff0dc5, type: 2}
+  - {fileID: 2100000, guid: 5fec195bce0a4704f8b19a4a019627b6, type: 2}
+  - {fileID: 2100000, guid: 266d2cdc30ba9644fbb1f4341bc5b7f7, type: 2}
+  - {fileID: 2100000, guid: 3e47a8e43ba111d4694358f84622ca92, type: 2}
 --- !u!1 &844828048
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,7 +3831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allScenarios:
-  - {fileID: 11400000, guid: 61ad79aaa2bde9648a131fd8571648e4, type: 2}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 0250612c0f37d884084ae5d8346abd33, type: 2}
   resultText: {fileID: 1908082990}
   goalText: {fileID: 430473696}
@@ -3828,6 +3846,7 @@ MonoBehaviour:
   turns: {fileID: 263276008}
   maxTurns: 3
   chargePort: {fileID: 1058000280}
+  earthController: {fileID: 844115000}
 --- !u!4 &1312849160
 Transform:
   m_ObjectHideFlags: 0

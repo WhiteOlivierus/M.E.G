@@ -1,6 +1,8 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
+using FMOD;
 
 public class SliderComponent : MonoBehaviour, IInteractable
 {
@@ -16,8 +18,16 @@ public class SliderComponent : MonoBehaviour, IInteractable
     private float stepping = .05f;
     public Color hightlightColor { get; set; } = Color.red;
 
+    [EventRef]
+    public string Event = "";
+    FMOD.Studio.EventInstance slide;
+
     private void Awake()
     {
+        slide = RuntimeManager.CreateInstance(Event);
+        RuntimeManager.PlayOneShot(Event);
+        slide.start();
+
         graphics = transform.GetChild(0).transform;
         minSliderPosition = transform.GetChild(1).transform.localPosition;
         maxSliderPosition = transform.GetChild(2).transform.localPosition;
@@ -36,6 +46,8 @@ public class SliderComponent : MonoBehaviour, IInteractable
     public void OnClick()
     {
         SetMousePosition();
+        slide.setParameterByName("Sliding", 1f);
+
     }
 
     public void OnDrag()
@@ -81,7 +93,7 @@ public class SliderComponent : MonoBehaviour, IInteractable
         }
         else
         {
-            Debug.Log(value);
+            UnityEngine.Debug.Log(value);
         }
     }
 

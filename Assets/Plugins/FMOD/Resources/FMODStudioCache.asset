@@ -31,12 +31,13 @@ MonoBehaviour:
   - {fileID: 114939374496387436}
   - {fileID: 114329407867373124}
   - {fileID: 114261434677546012}
+  - {fileID: 114965001128019698}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114278187846425814}
   StringsBanks:
   - {fileID: 114661687467623126}
-  stringsBankWriteTime: 636891248749185868
+  stringsBankWriteTime: 636891268732392048
   cacheVersion: 3
 --- !u!114 &114067850439651440
 MonoBehaviour:
@@ -166,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Projects\Games\Sustainabiliteam\M.E.G\Assets\M.E.G. FMOD Project\Build\Desktop\Master.bank
-  lastModified: 636891248749577928
+  lastModified: 636891268732741529
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -413,11 +414,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\M.E.G. FMOD Project\Build\Desktop\Master.strings.bank
-  lastModified: 636891248749185868
+  lastModified: 636891268732392048
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1372
+    Value: 1464
   Exists: 1
 --- !u!114 &114678298160446100
 MonoBehaviour:
@@ -455,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Projects\Games\Sustainabiliteam\M.E.G\Assets\M.E.G. FMOD Project\Build\Desktop\Master.strings.bank
-  lastModified: 636891248749185868
+  lastModified: 636891268732392048
   LoadResult: 70
   FileSizes: []
   Exists: 1
@@ -505,6 +506,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4905
+--- !u!114 &114813046049479710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114939374496387436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,3 +546,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 132308
+--- !u!114 &114965001128019698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Slider_Static
+  guid: 4175f6409187904188bc20e3032be343
+  Banks:
+  - {fileID: 114278187846425814}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114813046049479710}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700

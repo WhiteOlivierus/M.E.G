@@ -16,10 +16,16 @@ public class GameManager : MonoBehaviour
     private int turnsLeft;
     private Scenario currentScenario;
     private DragableComponent connectedBattery;
+    private TextMesh[] precisionMonitors;
+    private SpriteRenderer[] iconMonitors;
+    private Sprite[] icons;
 
     void Awake()
     {
+        precisionMonitors = GameObject.FindWithTag("precision").GetComponentsInChildren<TextMesh>();
+        iconMonitors = GameObject.FindWithTag("icon").GetComponentsInChildren<SpriteRenderer>();
         allScenarios = Resources.LoadAll<Scenario>("Scenarios");
+        icons = Resources.LoadAll<Sprite>("Icons");
     }
 
     void Start()
@@ -28,8 +34,14 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < allSliders.Length; i++)
         {
-            ScenarioType s = (ScenarioType)i;
-            allSliders[i].sliderName.text = s.ToString();
+            allSliders[i].sliderName.Add(iconMonitors[i]);
+            allSliders[i].precisionMonitor = precisionMonitors[i];
+            ScenarioType scenarioT = (ScenarioType)i;
+
+            foreach (SpriteRenderer s in allSliders[i].sliderName)
+            {
+                s.sprite = icons[i];
+            }
         }
     }
 

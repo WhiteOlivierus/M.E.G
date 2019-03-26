@@ -21,7 +21,7 @@ namespace FMODUnity
         const string BankExtension = "bank";
 
         const int FilePollTimeSeconds = 5;
-        
+
         // How many seconds to wait since last file activity to start the import
         const int CountdownTimerReset = 15 / FilePollTimeSeconds;
 
@@ -77,7 +77,7 @@ namespace FMODUnity
             }
 
             string defaultBankFolder = null;
-            
+
             if (!Settings.Instance.HasPlatforms)
             {
                 defaultBankFolder = EditorUtils.GetBankDirectory();
@@ -243,7 +243,7 @@ namespace FMODUnity
                     }
 
                     loadedStringsBanks.Add(stringBank);
-                
+
                     FileInfo stringBankFileInfo = new FileInfo(stringBankPath);
 
                     string masterBankFileName = Path.GetFileName(stringBankPath).Replace(StringBankExtension, BankExtension);
@@ -545,15 +545,15 @@ namespace FMODUnity
                         targetInfo = new FileInfo(targetPath);
                         targetInfo.IsReadOnly = false;
                         targetInfo.LastWriteTime = sourceInfo.LastWriteTime;
-                        
+
                         madeChanges = true;
                     }
                 }
             }
-            catch(Exception exception)
+            catch (Exception exception)
             {
-                UnityEngine.Debug.LogError(string.Format("FMOD Studio: copy banks for platform {0} : copying banks from {1} to {2}", platform.ToString(), bankSourceFolder, bankTargetFolder));
-                UnityEngine.Debug.LogException(exception);
+                // UnityEngine.Debug.LogError(string.Format("FMOD Studio: copy banks for platform {0} : copying banks from {1} to {2}", platform.ToString(), bankSourceFolder, bankTargetFolder));
+                // UnityEngine.Debug.LogException(exception);
                 return;
             }
 
@@ -570,7 +570,7 @@ namespace FMODUnity
 
             // Copy over assets for the new platform
             CopyToStreamingAssets();
-        }   
+        }
 
         static void OnCacheChange()
         {
@@ -654,7 +654,7 @@ namespace FMODUnity
         }
 
         public static List<EditorBankRef> MasterBanks
-        { 
+        {
             get
             {
                 UpdateCache();
@@ -699,13 +699,13 @@ namespace FMODUnity
 
         public class ActiveBuildTargetListener : IActiveBuildTargetChanged
         {
-            public int callbackOrder{ get { return 0; } }
+            public int callbackOrder { get { return 0; } }
             public void OnActiveBuildTargetChanged(BuildTarget previousTarget, BuildTarget newTarget)
             {
                 BuildTargetChanged();
             }
         }
-        #if UNITY_2018_1_OR_NEWER
+#if UNITY_2018_1_OR_NEWER
         public class PreprocessBuild : IPreprocessBuildWithReport
         {
             public int callbackOrder { get { return 0; } }
@@ -714,7 +714,7 @@ namespace FMODUnity
                 BuildTargetChanged();
             }
         }
-        #else
+#else
         public class PreprocessBuild : IPreprocessBuild
         {
             public int callbackOrder { get { return 0; } }
@@ -723,6 +723,6 @@ namespace FMODUnity
                 BuildTargetChanged();
             }
         }
-        #endif
+#endif
     }
 }

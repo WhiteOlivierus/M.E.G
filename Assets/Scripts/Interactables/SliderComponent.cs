@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using FMODUnity;
@@ -7,14 +7,14 @@ using FMOD;
 public class SliderComponent : MonoBehaviour, IInteractable
 {
     public float value;
-    [HideInInspector] public TextMesh sliderName;
+    public List<SpriteRenderer> sliderName;
+    public TextMesh precisionMonitor;
     [SerializeField] private int maxRange = 1;
     private Transform graphics;
     private Vector3 minSliderPosition;
     private Vector3 maxSliderPosition;
     private Vector3 lastMousePosition;
     private TextMesh monitor;
-    private TextMesh precisionMonitor;
     private float stepping = .05f;
     public Color hightlightColor { get; set; } = Color.red;
 
@@ -31,8 +31,6 @@ public class SliderComponent : MonoBehaviour, IInteractable
         graphics = transform.GetChild(0).transform;
         minSliderPosition = transform.GetChild(1).transform.localPosition;
         maxSliderPosition = transform.GetChild(2).transform.localPosition;
-        sliderName = transform.GetChild(4).GetComponent<TextMesh>();
-        precisionMonitor = transform.GetChild(5).GetComponent<TextMesh>();
         monitor = transform.GetChild(3).GetComponent<TextMesh>();
     }
 
@@ -74,11 +72,6 @@ public class SliderComponent : MonoBehaviour, IInteractable
         lastMousePosition = Input.mousePosition;
     }
 
-    private void SetInitialPosition()
-    {
-        throw new NotImplementedException();
-    }
-
     private void UpdateSlider()
     {
         graphics.localPosition = Utilities.ClampVector(graphics.localPosition, maxSliderPosition, minSliderPosition);
@@ -108,9 +101,9 @@ public class SliderComponent : MonoBehaviour, IInteractable
         value = (int)Utilities.Map(currentToMinDist, 0, dist, 0, maxRange);
     }
 
-    public void SetPrecisionMonitor(int i)
+    public void SetPrecisionMonitor(int j)
     {
-        switch (i)
+        switch (j)
         {
             case -1:
                 precisionMonitor.text = "+";

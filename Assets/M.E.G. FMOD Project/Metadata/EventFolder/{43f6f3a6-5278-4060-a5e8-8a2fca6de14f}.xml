@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EventFolder" id="{43f6f3a6-5278-4060-a5e8-8a2fca6de14f}">
+		<property name="name">
+			<value>GEM_Narrative_Ending</value>
+		</property>
+		<relationship name="folder">
+			<destination>{cf5a2aeb-9643-41df-899d-26de8f18c8b9}</destination>
+		</relationship>
+	</object>
+</objects>

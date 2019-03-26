@@ -63,17 +63,11 @@
 	<object class="MarkerTrack" id="{fcea251c-b005-4655-b097-ec37ff3e565f}" />
 	<object class="MarkerTrack" id="{1bca0cd1-c3ba-461e-9e90-c0270674835c}" />
 	<object class="GroupTrack" id="{73de0436-5ddb-4022-b7f1-5616edd2d390}">
-		<relationship name="modules">
-			<destination>{47bcc2a5-c465-480e-b247-1a9e030f7106}</destination>
-		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{a9b672a3-abe0-4ef3-aafc-dce1c3d6ea51}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{d84d87da-bfce-4adf-ac04-8d1b98be5aae}">
-		<relationship name="modules">
-			<destination>{47bcc2a5-c465-480e-b247-1a9e030f7106}</destination>
-		</relationship>
 		<relationship name="markers">
 			<destination>{5ce3a59d-1e69-499b-bb7b-189253902a4a}</destination>
 			<destination>{e96c22a2-c538-433b-8c3d-8e6b395046e6}</destination>
@@ -100,20 +94,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a08e887e-d124-40b2-a38d-984d477133c5}" />
-	<object class="SingleSound" id="{47bcc2a5-c465-480e-b247-1a9e030f7106}">
-		<property name="isCutoff">
-			<value>true</value>
-		</property>
-		<property name="length">
-			<value>3.1183958333333335</value>
-		</property>
-		<relationship name="modulators">
-			<destination>{1e561a2e-335a-4da5-bed2-79b9d29cd257}</destination>
-		</relationship>
-		<relationship name="audioFile">
-			<destination>{1352458a-9434-4ec8-ab29-b1ff43cd8058}</destination>
-		</relationship>
-	</object>
 	<object class="EventMixerGroup" id="{a9b672a3-abe0-4ef3-aafc-dce1c3d6ea51}">
 		<property name="volume">
 			<value>-8.5</value>
@@ -236,14 +216,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{ce43cf88-7200-4218-8bfc-5b54d6e805ef}" />
 	<object class="MixerBusFader" id="{ff3beaab-c493-4320-809d-7d7581d1677f}" />
-	<object class="RandomizerModulator" id="{1e561a2e-335a-4da5-bed2-79b9d29cd257}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>startOffset</value>
-		</property>
-		<property name="amount">
-			<value>100</value>
-		</property>
-	</object>
 	<object class="RandomizerModulator" id="{904a83a7-b5cf-42ea-bebf-10a399cbe576}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>

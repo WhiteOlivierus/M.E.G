@@ -9,6 +9,8 @@ public class Scenario : ScriptableObject
 
     public Sprite scenario;
 
+    public float[] earthValues = new float[5];
+
     public void Awake()
     {
         for (int i = 0; i < sliders.Length; i++)

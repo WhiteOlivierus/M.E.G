@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [Space] [SerializeField] private TextMesh turns = new TextMesh();
     [SerializeField] private int maxTurns = 0;
     [Space] public GameObject chargePort;
+    [Space] [SerializeField] private EarthController earthController;
 
     private int turnsLeft;
     private Scenario currentScenario;
@@ -49,6 +50,7 @@ public class GameManager : MonoBehaviour
         {
             string scenarioResult = allScenarios[index].scenarioName;
             resultSprite.sprite = allScenarios[index].scenario;
+            earthController.SetAllMaterials(allScenarios[index].earthValues);
             SetText(resultText, scenarioResult);
         }
         else

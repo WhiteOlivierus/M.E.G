@@ -6,9 +6,9 @@ using FMOD;
 
 public class SliderComponent : MonoBehaviour, IInteractable
 {
-    public float value;
+    [HideInInspector] public float value;
     public List<SpriteRenderer> sliderName;
-    public TextMesh precisionMonitor;
+    [HideInInspector] public TextMesh precisionMonitor;
     [SerializeField] private int maxRange = 1;
     private Transform graphics;
     private Vector3 minSliderPosition;

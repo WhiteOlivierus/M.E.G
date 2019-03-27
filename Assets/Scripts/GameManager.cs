@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
 
+        ShowEmpty();
+
         for (int i = 0; i < allSliders.Length; i++)
         {
             allSliders[i].sliderName.Add(iconMonitors[i]);
@@ -59,6 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckGameState()
     {
+        if (!notShowingWrong) { return; }
         if (connectedBattery == null) { return; }
 
         SetTurns();
@@ -71,7 +74,7 @@ public class GameManager : MonoBehaviour
         }
         SetLastValues();
 
-        if (notShowingWrong) { ShowResult(FindClosestScenarioToSliders()); }
+        ShowResult(FindClosestScenarioToSliders());
     }
 
     private void SetLastValues()

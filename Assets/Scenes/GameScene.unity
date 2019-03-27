@@ -2229,7 +2229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/GEM_Narrative_Intro/GEM_Narrative_Intro_God
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   CollisionTag: 
   AllowFadeout: 1
@@ -2734,7 +2734,7 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
-      value: event:/GEM_Sliders/GEM_Slider_Lifestyle
+      value: event:/GEM_Sliders/GEM_Slider_Resources
       objectReference: {fileID: 0}
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
@@ -4121,7 +4121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/GEM_Narrative_Intro/GEM_Narrative_Intro_Player
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   CollisionTag: 
   AllowFadeout: 1
@@ -5551,6 +5551,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30.100002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: Event
+      value: event:/GEM_Sliders/GEM_Slider_Lifestyle
       objectReference: {fileID: 0}
     - target: {fileID: 5137294781659395154, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
@@ -9715,6 +9720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30.100002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: Event
+      value: event:/GEM_Sliders/GEM_Slider_Economy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}

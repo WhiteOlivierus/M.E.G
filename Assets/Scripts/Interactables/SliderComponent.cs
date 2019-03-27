@@ -22,7 +22,10 @@ public class SliderComponent : MonoBehaviour, IInteractable
     FMOD.Studio.EventInstance slide;
     FMOD.Studio.EventDescription slideEventDescription;
     FMOD.Studio.PARAMETER_DESCRIPTION sliderParameterDescription;
-    FMOD.Studio.PARAMETER_ID slidingParameterId, sliderParameterId;
+    FMOD.Studio.PARAMETER_ID slidingOnParameterId, sliderOnParameterId;
+    //ValueSlide
+    FMOD.Studio.PARAMETER_DESCRIPTION slideValueParameterDescription;
+    FMOD.Studio.PARAMETER_ID slidingValueParameterId, sliderValueParameterId;
 
 
     private void Awake()
@@ -31,9 +34,11 @@ public class SliderComponent : MonoBehaviour, IInteractable
         slideEventDescription = FMODUnity.RuntimeManager.GetEventDescription(Event);
         slide.getDescription(out slideEventDescription);
         slideEventDescription.getParameterDescriptionByName("Sliding", out sliderParameterDescription);
+        slideEventDescription.getParameterDescriptionByName("Value", out slideValueParameterDescription);
         slide.start();
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(slide, GetComponent<Transform>(), GetComponent<Rigidbody>());
-        slidingParameterId = sliderParameterDescription.id;
+        slidingOnParameterId = sliderParameterDescription.id;
+        slidingValueParameterId = slideValueParameterDescription.id;
 
         graphics = transform.GetChild(0).transform;
         minSliderPosition = transform.GetChild(1).transform.localPosition;
@@ -67,13 +72,16 @@ public class SliderComponent : MonoBehaviour, IInteractable
         CalculateValueOfSlider();
         LogValue();
         slide.setParameterByName("Sliding", 0);
+        slide.setParameterByName("Value", value / 100);
+        UnityEngine.Debug.Log(value / 100);
     }
 
-    public void OnRelease() 
-    {
+    public void OnRelease() {
+
         slide.setParameterByName("Sliding", 1);
         return; 
-    }
+
+        }
 
 
     private void MoveSlider()

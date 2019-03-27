@@ -5,13 +5,11 @@ public class Menu : MonoBehaviour
 {
     public GameObject homeScreen;
     public GameObject pauseScreen;
-    public GameObject eventSystem;
     private SmoothMouseLook sml;
 
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(eventSystem);
     }
 
     void Update()
@@ -49,8 +47,6 @@ public class Menu : MonoBehaviour
         homeScreen.SetActive(false);
         pauseScreen.SetActive(false);
         SceneManager.LoadScene(index);
-
-
     }
 
     public void CloseGame()

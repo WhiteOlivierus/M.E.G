@@ -3307,7 +3307,7 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
-      value: event:/GEM_Slider_Static
+      value: event:/GEM_Sliders/GEM_Slider_Population
       objectReference: {fileID: 0}
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
@@ -3672,7 +3672,7 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
-      value: event:/GEM_Slider_Static
+      value: event:/GEM_Sliders/GEM_Slider_Technology
       objectReference: {fileID: 0}
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
@@ -4284,7 +4284,7 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
-      value: event:/GEM_Slider_Static
+      value: event:/GEM_Sliders/GEM_Slider_Resources
       objectReference: {fileID: 0}
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}

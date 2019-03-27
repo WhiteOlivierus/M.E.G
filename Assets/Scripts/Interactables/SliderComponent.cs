@@ -5,9 +5,9 @@ using FMODUnity;
 
 public class SliderComponent : MonoBehaviour, IInteractable
 {
-    public float value;
+    [HideInInspector] public float value;
     public List<SpriteRenderer> sliderName;
-    public TextMesh precisionMonitor;
+    [HideInInspector] public TextMesh precisionMonitor;
     [SerializeField] private int maxRange = 1;
     private Transform graphics;
     private Vector3 minSliderPosition;
@@ -58,7 +58,7 @@ public class SliderComponent : MonoBehaviour, IInteractable
         SetMousePosition();
         //RuntimeManager.PlayOneShot(PlayerStateEvent);
 
-       //slide.setParameterByID(Sliding, 0f);
+        //slide.setParameterByID(Sliding, 0f);
     }
 
     public void OnDrag()
@@ -74,12 +74,13 @@ public class SliderComponent : MonoBehaviour, IInteractable
         UnityEngine.Debug.Log(value / 100);
     }
 
-    public void OnRelease() {
+    public void OnRelease()
+    {
 
         slide.setParameterByName("Sliding", 1);
-        return; 
+        return;
 
-        }
+    }
 
 
     private void MoveSlider()

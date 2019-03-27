@@ -13,9 +13,9 @@ public class SpawnBatteries : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     public void SpawnBaterry()
     {
-        Instantiate(baterry, transform.position, Quaternion.identity);
+        GameObject go = Instantiate(baterry, transform.position, Quaternion.identity);
+        go.transform.SetParent(transform);
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -19,11 +20,13 @@ public class GameManager : MonoBehaviour
     private TextMesh[] precisionMonitors;
     private SpriteRenderer[] iconMonitors;
     private Sprite[] icons;
+    private TextMesh[] lastValues;
 
     void Awake()
     {
         precisionMonitors = GameObject.FindWithTag("precision").GetComponentsInChildren<TextMesh>();
         iconMonitors = GameObject.FindWithTag("icon").GetComponentsInChildren<SpriteRenderer>();
+        lastValues = GameObject.FindWithTag("lastValue").GetComponentsInChildren<TextMesh>();
         allScenarios = Resources.LoadAll<Scenario>("Scenarios");
         icons = Resources.LoadAll<Sprite>("Icons");
     }
@@ -57,8 +60,16 @@ public class GameManager : MonoBehaviour
             ShowResult(-1);
             return;
         }
-
+        SetLastValues();
         ShowResult(FindClosestScenarioToSliders());
+    }
+
+    private void SetLastValues()
+    {
+        for (int i = 0; i < allSliders.Length; i++)
+        {
+            lastValues[i].text = allSliders[i].value.ToString();
+        }
     }
 
     private void ShowResult(int index)
@@ -161,7 +172,7 @@ public class GameManager : MonoBehaviour
         connectedBattery = cb;
         turnsLeft = maxTurns;
         turns.text = turnsLeft.ToString();
-        currentScenario = allScenarios[Random.Range(0, allScenarios.Length)];
+        currentScenario = allScenarios[UnityEngine.Random.Range(0, allScenarios.Length)];
         SetText(goalText, currentScenario.scenarioName);
         return true;
     }

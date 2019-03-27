@@ -8,7 +8,7 @@
 [WRN] SystemI::init                            : Output requires a sample rate of 96000Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000004DD22EC8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000000043C95428 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,36 +16,152 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000001A3AD618 : node = 0000000045BE86C0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001A479808.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001A3AD618
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4839232
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000045BE87D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GEM_Slider_Population_Silent', format=2, channels=2, frequency=48000, lengthbytes=114240, lengthpcm=569530, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.138489.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001A3AD618
+[LOG] SoundI::getSubSound                      : sound 000000001A3AD618.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001A3ADE88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001A3ADE88
+[LOG] SoundI::release                          : GEM_Slider_Population_Silent (000000001A3AD618)
+[LOG] SoundI::release                          :     GEM_Slider_Population_Silent (000000009E7A6E78)
+[LOG] SoundI::release                          :     GEM_Slider_Population_Silent (000000001A3ADE88)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000001A3AD618 : node = 0000000045BE86C0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001A479808.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001A3AD618
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4839232
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000045BE87D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GEM_Slider_Population_Silent', format=2, channels=2, frequency=48000, lengthbytes=114240, lengthpcm=569530, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.138489.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001A3AD618
+[LOG] SoundI::getSubSound                      : sound 000000001A3AD618.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001A3ADCD8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001A3ADCD8
+[LOG] SoundI::release                          : GEM_Slider_Population_Silent (000000001A3AD618)
+[LOG] SoundI::release                          :     GEM_Slider_Population_Silent (000000009E7A6E78)
+[LOG] SoundI::release                          :     GEM_Slider_Population_Silent (000000001A3ADCD8)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::finishLoadBank                  : Bank with guid {06a4e2f5-3051-04e3-3962-d1f3ce1c317e} has already been loaded
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::finishLoadBank                  : Bank with guid {06a4e2f5-3051-04e3-3962-d1f3ce1c317e} has already been loaded
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::finishLoadBank                  : Bank with guid {06a4e2f5-3051-04e3-3962-d1f3ce1c317e} has already been loaded
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::finishLoadBank                  : Bank with guid {06a4e2f5-3051-04e3-3962-d1f3ce1c317e} has already been loaded
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::finishLoadBank                  : Bank with guid {06a4e2f5-3051-04e3-3962-d1f3ce1c317e} has already been loaded
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::finishLoadBank                  : Bank with guid {06a4e2f5-3051-04e3-3962-d1f3ce1c317e} has already been loaded
+[LOG] SystemI::createSound                     : filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000001A3AD108 : node = 0000000087A3D710
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001A479808.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001A3AD108
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     filename = Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4839232
+[LOG] SystemI::createSound                     :     setdata soundi = 000000001A3AE038 : node = 0000000087A3D5D0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000087A3D820
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001A479808.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001A3AD108
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001A3AE038
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\M.E.G. FMOD Project\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4839232
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000087A3D6E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GJS_Player_Button_Process', format=2, channels=1, frequency=48000, lengthbytes=3072, lengthpcm=13955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381073.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001A3AE038
+[LOG] SoundI::getSubSound                      : sound 000000001A3AD108.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001A3AD618
+[LOG] SoundI::getSubSound                      : sound 000000001A3AE038.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001A3AD618
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001A3AD7C8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001A3AD7C8
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001A3AE038)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000009E7A71B8)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000001A3AD7C8)
+[LOG] SoundI::release                          : GJS_Player_Button_Process (000000001A3AD108)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000009E7A6E78)
+[LOG] SoundI::release                          :     GJS_Player_Button_Process (000000001A3AD618)
+[LOG] SoundI::release                          :  (0000000046DB3398)
+[LOG] SoundI::release                          :     GEM_Slider_Policy_PoliceLoop (000000009E49D2B8)
+[LOG] SoundI::release                          :  (0000000046DB4A98)
+[LOG] SoundI::release                          :     GEM_Slider_Policy_People (000000009E7A6CD8)
+[LOG] SoundI::release                          :  (0000000046DB44D8)
+[LOG] SoundI::release                          :     GEM_Slider_Technology_Empty (000000009E49D798)
+[LOG] SoundI::release                          :  (000000009E54B088)
+[LOG] SoundI::release                          :     GEM_Slider_Technology_Full (000000009E49CC38)
+[LOG] SoundI::release                          :  (0000000046DB54A8)
+[LOG] SoundI::release                          :     GEM_Slider_Coin_1 (000000009E49D5F8)
+[LOG] SoundI::release                          :  (000000009E54AC38)
+[LOG] SoundI::release                          :     GEM_Slider_Coin_2 (000000009E49CDD8)
+[LOG] SoundI::release                          :  (000000009E54A678)
+[LOG] SoundI::release                          :     GEM_Slider_Coin_3 (000000009E49DAD8)
+[LOG] SoundI::release                          :  (000000009E549988)
+[LOG] SoundI::release                          :     GEM_Slider_Coin_4 (000000009E49CF78)
+[LOG] SoundI::release                          :  (000000009E54A228)
+[LOG] SoundI::release                          :     GEM_Slider_Economy_Money_1 (000000009E49C8F8)
+[LOG] SoundI::release                          :  (0000000046DB2F48)
+[LOG] SoundI::release                          :     GEM_Slider_Economy_Money_2 (000000009E49D118)
+[LOG] SoundI::release                          :  (0000000046DB4648)
+[LOG] SoundI::release                          :     GEM_Slider_Economy_Money_3 (000000009E7A6178)
+[LOG] SoundI::release                          :  (000000009E54A508)
+[LOG] SoundI::release                          :     GEM_Slider_Economy_Money_4 (000000009E49C278)
+[LOG] SoundI::release                          :  (000000009E549AF8)
+[LOG] SoundI::release                          :     GEM_Slider_Resources_Min_Nature (000000009E49D458)
+[LOG] SoundI::release                          : GEM_Ambiance (00000000875DDA88)
+[LOG] SoundI::release                          :     GEM_Ambiance (000000009E49DE18)
+[LOG] SoundI::release                          :     GEM_Ambiance (00000000875DF738)
+[LOG] SoundI::release                          :  (000000009E549818)
+[LOG] SoundI::release                          :     GEM_Slider_Resources_Max (000000009E49CA98)
+[LOG] SoundI::release                          :  (000000009E54A958)
+[LOG] SoundI::release                          :     GEM_Slider_Resources_Min_Windmill (000000009E49DC78)
+[LOG] SoundI::release                          :  (000000009E54B4D8)
+[LOG] SoundI::release                          :     GEM_Slider_Lifestyle_Beat (000000009E49C758)
+[LOG] SoundI::release                          :  (000000009E549F48)
+[LOG] SoundI::release                          :     GEM_Slider_Lifestyle_Nature (000000009E49D938)
+[LOG] SoundI::release                          :  (000000009E5496A8)
+[LOG] SoundI::release                          :     GEM_Slider_Population_Wild (000000009E49C0D8)
+[LOG] SoundI::release                          :  (000000009E54A7E8)
+[LOG] SoundI::release                          :     GEM_Slider_Economy_Slide (000000009E49C5B8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)

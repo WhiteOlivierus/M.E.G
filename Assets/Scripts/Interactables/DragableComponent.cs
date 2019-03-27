@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DragableComponent : MonoBehaviour, IInteractable
 {
-    private float snapRange = 0.1f;
+    private float snapRange = 0.2f;
     private Vector3 endLocation;
     private Quaternion endRotation;
     private GameObject graphics;

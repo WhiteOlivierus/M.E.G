@@ -44,6 +44,8 @@ public class Menu : MonoBehaviour
 
     public void LoadScene(int index)
     {
+        if (index == 0)
+            Destroy(gameObject);
         homeScreen.SetActive(false);
         pauseScreen.SetActive(false);
         SceneManager.LoadScene(index);

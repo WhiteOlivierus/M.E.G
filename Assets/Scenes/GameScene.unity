@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028653, g: 0.22571698, b: 0.30692574, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028629, g: 0.22571659, b: 0.30692545, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -71,7 +71,7 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
-    m_BakeBackend: 2
+    m_BakeBackend: 1
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
@@ -793,7 +793,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190032287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.933, z: -0.429}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1291132870}
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/GEM_Ambiance
+  Event: event:/GEM_Music/GEM_Ambiance
   PlayEvent: 1
   StopEvent: 0
   CollisionTag: 
@@ -1724,6 +1724,11 @@ PrefabInstance:
       propertyPath: Event
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8128dbe83e33541498f2d4ea4c6ae7a8, type: 3}
 --- !u!114 &527808130 stripped
@@ -1873,7 +1878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559613534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.34, z: 0.14}
+  m_LocalPosition: {x: 0, y: 2.933, z: -0.429}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1291132870}
@@ -1891,7 +1896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/GEM_Narrative_Intro_God
+  Event: event:/GEM_Narrative_Intro/GEM_Narrative_Intro_God
   PlayEvent: 1
   StopEvent: 0
   CollisionTag: 
@@ -2240,6 +2245,11 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
     - target: {fileID: 2929133993708562801, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
@@ -3025,7 +3035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113459371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.933, z: -0.429}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1291132870}
@@ -3043,7 +3053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/GEM_Narrative_Intro_Player
+  Event: event:/GEM_Narrative_Intro/GEM_Narrative_Intro_Player
   PlayEvent: 1
   StopEvent: 0
   CollisionTag: 
@@ -3297,6 +3307,11 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3657,6 +3672,11 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4264,6 +4284,11 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7347,6 +7372,11 @@ PrefabInstance:
     - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
         type: 3}
       propertyPath: Event
+      value: event:/GEM_Slider_Static
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955498319355079909, guid: 8128dbe83e33541498f2d4ea4c6ae7a8,
+        type: 3}
+      propertyPath: PlayerStateEvent
       value: event:/GEM_Slider_Static
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -1,29 +1,59 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private Scenario[] allScenarios = new Scenario[0];
-    [Space] [SerializeField] private TextMesh resultText = new TextMesh();
-    [SerializeField] private TextMesh goalText = new TextMesh();
+    private Scenario[] allScenarios = new Scenario[0];
+    [Space] [SerializeField] private TextMeshPro resultText = new TextMeshPro();
+    [SerializeField] private TextMeshPro goalText = new TextMeshPro();
     [SerializeField] private SpriteRenderer resultSprite = new SpriteRenderer();
     [Space] [SerializeField] private SliderComponent[] allSliders = new SliderComponent[0];
     [Space] [SerializeField] private TextMesh turns = new TextMesh();
     [SerializeField] private int maxTurns = 0;
     [Space] public GameObject chargePort;
+    [Space] [SerializeField] private EarthController earthController;
+    [Space] [SerializeField] private Material wrongMaterial;
 
     private int turnsLeft;
     private Scenario currentScenario;
     private DragableComponent connectedBattery;
+    private TextMesh[] precisionMonitors;
+    private SpriteRenderer[] iconMonitors;
+    private Sprite[] icons;
+    private TextMesh[] lastValues;
+    private Renderer[] screenRenderers;
+    private Material[] screenMaterials;
+    private bool notShowingWrong = true;
+
+    void Awake()
+    {
+        precisionMonitors = GameObject.FindWithTag("precision").GetComponentsInChildren<TextMesh>();
+        iconMonitors = GameObject.FindWithTag("icon").GetComponentsInChildren<SpriteRenderer>();
+        lastValues = GameObject.FindWithTag("lastValue").GetComponentsInChildren<TextMesh>();
+        screenRenderers = GameObject.FindWithTag("screens").GetComponentsInChildren<Renderer>();
+        screenMaterials = new Material[screenRenderers.Length];
+        allScenarios = Resources.LoadAll<Scenario>("Scenarios");
+        icons = Resources.LoadAll<Sprite>("Icons");
+    }
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
 
         for (int i = 0; i < allSliders.Length; i++)
         {
-            ScenarioType s = (ScenarioType)i;
-            allSliders[i].sliderName.text = s.ToString();
+            allSliders[i].sliderName.Add(iconMonitors[i]);
+            allSliders[i].precisionMonitor = precisionMonitors[i];
+            ScenarioType scenarioT = (ScenarioType)i;
+
+            foreach (SpriteRenderer s in allSliders[i].sliderName)
+            {
+                s.sprite = icons[i];
+            }
         }
     }
 
@@ -36,27 +66,53 @@ public class GameManager : MonoBehaviour
         if (CheckIfOutOfTurns())
         {
             ReleaseBattery();
-            ShowResult(-1);
+            ShowEmpty();
             return;
         }
+        SetLastValues();
 
-        ShowResult(FindClosestScenarioToSliders());
+        if (notShowingWrong) { ShowResult(FindClosestScenarioToSliders()); }
+    }
+
+    private void SetLastValues()
+    {
+        for (int i = 0; i < allSliders.Length; i++)
+        {
+            lastValues[i].text = allSliders[i].value.ToString();
+        }
     }
 
     private void ShowResult(int index)
     {
-        if (index >= 0)
+        if (index < 0)
         {
-            string scenarioResult = allScenarios[index].scenarioName;
-            resultSprite.sprite = allScenarios[index].scenario;
-            SetText(resultText, scenarioResult);
+            ShowWrong();
         }
         else
         {
-            SetText(goalText, "Replace batery for next goal");
-            SetText(resultText, "None");
-            resultSprite.sprite = null;
+            ShowRight(index);
         }
+    }
+
+    private void ShowEmpty()
+    {
+        SetText(goalText, "Replace batery for next goal");
+        SetText(resultText, "None");
+        resultSprite.sprite = null;
+    }
+
+    private void ShowRight(int index)
+    {
+        string scenarioResult = allScenarios[index].scenarioName;
+        resultSprite.sprite = allScenarios[index].scenario;
+        earthController.SetAllMaterials(allScenarios[index].earthValues);
+        SetText(resultText, scenarioResult);
+        ReleaseBattery();
+    }
+
+    private void ShowWrong()
+    {
+        StartCoroutine("Wrong");
     }
 
     private void SetTurns()
@@ -68,7 +124,7 @@ public class GameManager : MonoBehaviour
         DynamicGI.SetEmissive(r, r.material.GetColor("_EmissionColor") * .85f);
     }
 
-    private void SetText(TextMesh output, string text)
+    private void SetText(TextMeshPro output, string text)
     {
         output.text = text;
     }
@@ -109,12 +165,12 @@ public class GameManager : MonoBehaviour
 
                 if (lastScore == 0)
                 {
-                    Debug.Log("Winner winner chicken diner");
+                    return index;
                 }
             }
         }
 
-        return index;
+        return -1;
     }
 
     private bool CheckIfOutOfTurns()
@@ -142,8 +198,35 @@ public class GameManager : MonoBehaviour
         connectedBattery = cb;
         turnsLeft = maxTurns;
         turns.text = turnsLeft.ToString();
-        currentScenario = allScenarios[Random.Range(0, allScenarios.Length)];
+        currentScenario = allScenarios[UnityEngine.Random.Range(0, allScenarios.Length)];
         SetText(goalText, currentScenario.scenarioName);
+        resultSprite.sprite = null;
         return true;
+    }
+
+    private IEnumerator Wrong()
+    {
+        notShowingWrong = false;
+        SetScreensToWrong();
+        yield return new WaitForSeconds(3f);
+        SetScreensBack();
+        notShowingWrong = true;
+    }
+
+    private void SetScreensBack()
+    {
+        for (int i = 0; i < screenMaterials.Length; i++)
+        {
+            screenRenderers[i].material = screenMaterials[i];
+        }
+    }
+
+    private void SetScreensToWrong()
+    {
+        for (int i = 0; i < screenMaterials.Length; i++)
+        {
+            screenMaterials[i] = screenRenderers[i].material;
+            screenRenderers[i].material = wrongMaterial;
+        }
     }
 }

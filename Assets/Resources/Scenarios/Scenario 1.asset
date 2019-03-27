@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a8e3c8da7a6b84aa2ee966a06630d6, type: 3}
+  m_Name: Scenario 1
+  m_EditorClassIdentifier: 
+  sliders:
+  - type: 0
+    between: {x: 70, y: 80}
+  - type: 1
+    between: {x: 0, y: 20}
+  - type: 2
+    between: {x: 50, y: 50}
+  - type: 3
+    between: {x: 50, y: 50}
+  - type: 4
+    between: {x: 80, y: 90}
+  - type: 5
+    between: {x: 10, y: 20}
+  scenarioName: Scenario 2
+  scenario: {fileID: 21300000, guid: 5bddc6dd6b72e634293dbee555a99daa, type: 3}
+  earthValues:
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0

@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     private TextMesh[] lastValues;
     private Renderer[] screenRenderers;
     private Material[] screenMaterials;
+    private bool notShowingWrong = true;
 
     void Awake()
     {
@@ -69,7 +70,8 @@ public class GameManager : MonoBehaviour
             return;
         }
         SetLastValues();
-        ShowResult(FindClosestScenarioToSliders());
+
+        if (notShowingWrong) { ShowResult(FindClosestScenarioToSliders()); }
     }
 
     private void SetLastValues()
@@ -204,18 +206,27 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Wrong()
     {
-        for (int i = 0; i < screenMaterials.Length; i++)
-        {
-            screenMaterials[i] = screenRenderers[i].material;
-            screenRenderers[i].material = wrongMaterial;
-        }
-
+        notShowingWrong = false;
+        SetScreensToWrong();
         yield return new WaitForSeconds(3f);
+        SetScreensBack();
+        notShowingWrong = true;
+    }
 
+    private void SetScreensBack()
+    {
         for (int i = 0; i < screenMaterials.Length; i++)
         {
             screenRenderers[i].material = screenMaterials[i];
         }
     }
 
+    private void SetScreensToWrong()
+    {
+        for (int i = 0; i < screenMaterials.Length; i++)
+        {
+            screenMaterials[i] = screenRenderers[i].material;
+            screenRenderers[i].material = wrongMaterial;
+        }
+    }
 }

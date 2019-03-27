@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int maxTurns = 0;
     [Space] public GameObject chargePort;
     [Space] [SerializeField] private EarthController earthController;
+    [Space] [SerializeField] private Material wrongMaterial;
 
     private int turnsLeft;
     private Scenario currentScenario;
@@ -21,12 +23,16 @@ public class GameManager : MonoBehaviour
     private SpriteRenderer[] iconMonitors;
     private Sprite[] icons;
     private TextMesh[] lastValues;
+    private Renderer[] screenRenderers;
+    private Material[] screenMaterials;
 
     void Awake()
     {
         precisionMonitors = GameObject.FindWithTag("precision").GetComponentsInChildren<TextMesh>();
         iconMonitors = GameObject.FindWithTag("icon").GetComponentsInChildren<SpriteRenderer>();
         lastValues = GameObject.FindWithTag("lastValue").GetComponentsInChildren<TextMesh>();
+        screenRenderers = GameObject.FindWithTag("screens").GetComponentsInChildren<Renderer>();
+        screenMaterials = new Material[screenRenderers.Length];
         allScenarios = Resources.LoadAll<Scenario>("Scenarios");
         icons = Resources.LoadAll<Sprite>("Icons");
     }
@@ -58,7 +64,7 @@ public class GameManager : MonoBehaviour
         if (CheckIfOutOfTurns())
         {
             ReleaseBattery();
-            ShowResult(-1);
+            ShowEmpty();
             return;
         }
         SetLastValues();
@@ -75,19 +81,35 @@ public class GameManager : MonoBehaviour
 
     private void ShowResult(int index)
     {
-        if (index >= 0)
+        if (index < 0)
         {
-            string scenarioResult = allScenarios[index].scenarioName;
-            resultSprite.sprite = allScenarios[index].scenario;
-            earthController.SetAllMaterials(allScenarios[index].earthValues);
-            SetText(resultText, scenarioResult);
+            ShowWrong();
         }
         else
         {
-            SetText(goalText, "Replace batery for next goal");
-            SetText(resultText, "None");
-            resultSprite.sprite = null;
+            ShowRight(index);
         }
+    }
+
+    private void ShowEmpty()
+    {
+        SetText(goalText, "Replace batery for next goal");
+        SetText(resultText, "None");
+        resultSprite.sprite = null;
+    }
+
+    private void ShowRight(int index)
+    {
+        string scenarioResult = allScenarios[index].scenarioName;
+        resultSprite.sprite = allScenarios[index].scenario;
+        earthController.SetAllMaterials(allScenarios[index].earthValues);
+        SetText(resultText, scenarioResult);
+        ReleaseBattery();
+    }
+
+    private void ShowWrong()
+    {
+        StartCoroutine("Wrong");
     }
 
     private void SetTurns()
@@ -140,12 +162,12 @@ public class GameManager : MonoBehaviour
 
                 if (lastScore == 0)
                 {
-                    Debug.Log("Winner winner chicken diner");
+                    return index;
                 }
             }
         }
 
-        return index;
+        return -1;
     }
 
     private bool CheckIfOutOfTurns()
@@ -175,6 +197,24 @@ public class GameManager : MonoBehaviour
         turns.text = turnsLeft.ToString();
         currentScenario = allScenarios[UnityEngine.Random.Range(0, allScenarios.Length)];
         SetText(goalText, currentScenario.scenarioName);
+        resultSprite.sprite = null;
         return true;
     }
+
+    private IEnumerator Wrong()
+    {
+        for (int i = 0; i < screenMaterials.Length; i++)
+        {
+            screenMaterials[i] = screenRenderers[i].material;
+            screenRenderers[i].material = wrongMaterial;
+        }
+
+        yield return new WaitForSeconds(3f);
+
+        for (int i = 0; i < screenMaterials.Length; i++)
+        {
+            screenRenderers[i].material = screenMaterials[i];
+        }
+    }
+
 }

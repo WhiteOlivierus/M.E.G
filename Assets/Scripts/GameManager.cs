@@ -2,12 +2,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     private Scenario[] allScenarios = new Scenario[0];
-    [Space] [SerializeField] private TextMesh resultText = new TextMesh();
-    [SerializeField] private TextMesh goalText = new TextMesh();
+    [Space] [SerializeField] private TextMeshPro resultText = new TextMeshPro();
+    [SerializeField] private TextMeshPro goalText = new TextMeshPro();
     [SerializeField] private SpriteRenderer resultSprite = new SpriteRenderer();
     [Space] [SerializeField] private SliderComponent[] allSliders = new SliderComponent[0];
     [Space] [SerializeField] private TextMesh turns = new TextMesh();
@@ -121,7 +122,7 @@ public class GameManager : MonoBehaviour
         DynamicGI.SetEmissive(r, r.material.GetColor("_EmissionColor") * .85f);
     }
 
-    private void SetText(TextMesh output, string text)
+    private void SetText(TextMeshPro output, string text)
     {
         output.text = text;
     }

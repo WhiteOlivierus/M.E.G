@@ -52,6 +52,8 @@ public class DragableComponent : MonoBehaviour, IInteractable
 
     public void OnRelease()
     {
+        if (!InRange()) { return; }
+
         bool canCharge = gm.InitGame(this);
 
         if (!canCharge)
@@ -59,8 +61,6 @@ public class DragableComponent : MonoBehaviour, IInteractable
             rb.useGravity = true;
             return;
         }
-
-        if (!InRange()) { return; }
 
         rb.isKinematic = true;
         graphics.transform.position = endLocation;

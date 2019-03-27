@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{b2638970-ae55-4ddd-b2b6-d33f428d172f}">
+		<property name="assetPath">
+			<value>GEM_Slider_Coin_2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.16735416666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8cc72703-60d7-48cb-833b-443d08fd640e}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="DAWAsset" id="{412d9fb9-9fb0-4f42-972b-d4d61b9f7d18}">
+		<property name="assetPath">
+			<value>Game Jam Sessions 2019.RPP.link/GEM_Slider_Policy_PoliceLoop.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.6564791666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8cc72703-60d7-48cb-833b-443d08fd640e}</destination>
+		</relationship>
+		<relationship name="project">
+			<destination>{df3fcf1e-2ac8-4fb9-bc1c-a7a251661911}</destination>
+		</relationship>
+	</object>
+</objects>

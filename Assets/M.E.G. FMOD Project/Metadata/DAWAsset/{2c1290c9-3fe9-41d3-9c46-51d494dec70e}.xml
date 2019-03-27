@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="DAWAsset" id="{2c1290c9-3fe9-41d3-9c46-51d494dec70e}">
+		<property name="assetPath">
+			<value>GJS Narrative.RPP (2).link/GEM_Slider_Coin_4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.15779166666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8cc72703-60d7-48cb-833b-443d08fd640e}</destination>
+		</relationship>
+		<relationship name="project">
+			<destination>{07724880-a300-46f6-a5d8-694d2dc27a68}</destination>
+		</relationship>
+	</object>
+</objects>

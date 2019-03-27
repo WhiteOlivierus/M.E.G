@@ -37,9 +37,15 @@ MonoBehaviour:
   - {fileID: 114670208756200008}
   StringsBanks:
   - {fileID: 114870453727436382}
+<<<<<<< HEAD
   stringsBankWriteTime: 636893204589321185
   cacheVersion: 3
 --- !u!114 &114041452976782194
+=======
+  stringsBankWriteTime: 636893215564852915
+  cacheVersion: 3
+--- !u!114 &114006888763910626
+>>>>>>> Audio
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51,18 +57,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: event:/GJS_Result_Min_Policies
   guid: 0ae723d98ea98343a0c84de8521863f5
   Banks:
   - {fileID: 114670208756200008}
+=======
+  Path: event:/GEM_Result/GJS_Result_Max_Technology
+  guid: 1dbb4405c33ba841bf0342192546e073
+  Banks:
+  - {fileID: 114847740488056286}
+>>>>>>> Audio
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
   Length: 4905
 --- !u!114 &114076519995442114
+=======
+  Length: 6852
+--- !u!114 &114014043222883608
+>>>>>>> Audio
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,18 +92,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: event:/GJS_Result_Max_Resources
   guid: 87da34200f9cab499cb7545bd7fe7d16
   Banks:
   - {fileID: 114670208756200008}
+=======
+  Path: event:/GEM_Narrative_Intro/GEM_Narrative_Intro_God
+  guid: 2957aae268ee4a4a84c4cc1a56eca108
+  Banks:
+  - {fileID: 114847740488056286}
+>>>>>>> Audio
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
   Length: 6053
 --- !u!114 &114085332508166650
+=======
+  Length: 73662
+--- !u!114 &114041452976782194
+>>>>>>> Audio
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,8 +127,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: event:/GEM_Narrative_Intro_Player
   guid: 615a4f91c4fa8a4a842b36ce4cf3cf92
+=======
+  Path: event:/GJS_Result_Min_Policies
+  guid: 0ae723d98ea98343a0c84de8521863f5
+>>>>>>> Audio
   Banks:
   - {fileID: 114670208756200008}
   IsStream: 1
@@ -107,8 +142,13 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
   Length: 72773
 --- !u!114 &114106789047141736
+=======
+  Length: 4905
+--- !u!114 &114045294021299916
+>>>>>>> Audio
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,6 +157,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -127,6 +168,17 @@ MonoBehaviour:
   FileSizes: []
   Exists: 1
 --- !u!114 &114165063750068540
+=======
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114049666419194560
+>>>>>>> Audio
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +195,11 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+<<<<<<< HEAD
 --- !u!114 &114188001859196068
+=======
+--- !u!114 &114057018030548108
+>>>>>>> Audio
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,8 +211,112 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: event:/GJS_Result_Min_Technology
   guid: 0dee3124b437b0408c8981ee5f2b529e
+  Banks:
+  - {fileID: 114670208756200008}
+=======
+  Path: event:/GEM_Result/GJS_Result_Max_Economy
+  guid: a23bac0a972eb340aba12054ead8485e
+  Banks:
+  - {fileID: 114847740488056286}
+>>>>>>> Audio
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 5139
+--- !u!114 &114202659716843452
+=======
+  Length: 5361
+--- !u!114 &114076519995442114
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Ambiance
+  guid: 3c2c1b274527404da7f7d2fed3daf332
+  Banks:
+  - {fileID: 114670208756200008}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 132308
+--- !u!114 &114262894125303472
+=======
+  Length: 6053
+--- !u!114 &114081432243393920
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: event:/GJS_Player_Typing_Loop
+  guid: b4b6e6bc692bcc48b4c9bc828c989049
+  Banks:
+  - {fileID: 114670208756200008}
+  IsStream: 1
+=======
+  Path: event:/GEM_Narrative_Result/GEM_Narrative_Result_Bad
+  guid: 46bbabd2dc6d9f49a4ea6f883da1950c
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 0
+>>>>>>> Audio
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 3000
+--- !u!114 &114265148880427726
+=======
+  Length: 4061
+--- !u!114 &114085332508166650
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: event:/GJS_Result_Min_Economy
+  guid: 24305000226ac246924dce8427ce7387
+=======
+  Path: event:/GEM_Narrative_Intro_Player
+  guid: 615a4f91c4fa8a4a842b36ce4cf3cf92
+>>>>>>> Audio
   Banks:
   - {fileID: 114670208756200008}
   IsStream: 1
@@ -165,7 +325,417 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 6312
+--- !u!114 &114277776945565470
+=======
+  Length: 72773
+--- !u!114 &114092212867014064
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Projects\Games\Sustainabiliteam\M.E.G\Assets\M.E.G. FMOD Project\Build\Desktop\Master.strings.bank
+  lastModified: 636892006612695694
+  LoadResult: 70
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114311499748893716
+=======
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114098783277609396
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: event:/GJS_Result_Min_Resources
+  guid: 5150418966a2ed4f94fdd71d73e2f2fb
+  Banks:
+  - {fileID: 114670208756200008}
+=======
+  Path: event:/GJS_Player_Typing_Loop
+  guid: b4b6e6bc692bcc48b4c9bc828c989049
+  Banks:
+  - {fileID: 114847740488056286}
+>>>>>>> Audio
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 5048
+--- !u!114 &114430469911822558
+=======
+  Length: 3000
+--- !u!114 &114100046089315872
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: D:\Projects\Games\Sustainabiliteam\M.E.G\Assets\M.E.G. FMOD Project\Build\Desktop\Master.bank
+  lastModified: 636892006613164437
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114467339867752252
+=======
+  Path: event:/GEM_Slider_Static
+  guid: 4175f6409187904188bc20e3032be343
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114921724035711136}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
+--- !u!114 &114106789047141736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Dropbox\__PROJECTS\Game Jam Sessions GITHUB\M.E.G\M.E.G\Assets\M.E.G. FMOD
+    Project\Build\Desktop\Master.strings.bank
+  lastModified: 636893215564852915
+  LoadResult: 70
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114112111019315330
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: event:/GEM_Narrative_Intro_God
+  guid: 2957aae268ee4a4a84c4cc1a56eca108
+  Banks:
+  - {fileID: 114670208756200008}
+  IsStream: 1
+=======
+  Path: event:/GEM_Narrative_Result/GEM_Narrative_Result_Average
+  guid: 909d94e5a4d6974a9ab1db886b9f3744
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 0
+>>>>>>> Audio
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 73662
+--- !u!114 &114591631658570428
+=======
+  Length: 3986
+--- !u!114 &114115690498230332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114119502461351360
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114623566461660220
+=======
+  Path: event:/GEM_Button_Press
+  guid: 65d7a59b5d880d46b814b5fb3d2d360f
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 290
+--- !u!114 &114123215047599146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114133068857093980
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: event:/GEM_Slider_Static
+  guid: 4175f6409187904188bc20e3032be343
+  Banks:
+  - {fileID: 114670208756200008}
+=======
+  Path: event:/GEM_Narrative_Ending/GEM_Narrative_God_Average
+  guid: f478f0dd7a79d041b83e80f59291b948
+  Banks:
+  - {fileID: 114390509542759534}
+>>>>>>> Audio
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114165063750068540}
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 3700
+--- !u!114 &114670208756200008
+=======
+  Length: 6921
+--- !u!114 &114145399971199986
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: D:\Dropbox\__PROJECTS\Game Jam Sessions GITHUB\M.E.G\M.E.G\Assets\M.E.G. FMOD
+    Project\Build\Desktop\Master.bank
+  lastModified: 636893204589281333
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114682497197175744
+=======
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114155891395155794
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: event:/GJS_Result_Max_Economy
+  guid: a23bac0a972eb340aba12054ead8485e
+  Banks:
+  - {fileID: 114670208756200008}
+=======
+  Path: event:/GEM_Result/GJS_Result_Min_Economy
+  guid: 24305000226ac246924dce8427ce7387
+  Banks:
+  - {fileID: 114390509542759534}
+>>>>>>> Audio
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 5361
+--- !u!114 &114807475638306282
+=======
+  Length: 6312
+--- !u!114 &114157377825424008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Music/GEM_Ambiance
+  guid: 3c2c1b274527404da7f7d2fed3daf332
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 132308
+--- !u!114 &114188001859196068
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: event:/GJS_Result_Max_Policies
+  guid: 2aaefbc3ff43834e9c7adf383e0b23ed
+=======
+  Path: event:/GJS_Result_Min_Technology
+  guid: 0dee3124b437b0408c8981ee5f2b529e
+>>>>>>> Audio
+  Banks:
+  - {fileID: 114670208756200008}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 5779
+--- !u!114 &114820608729817578
+=======
   Length: 5139
+--- !u!114 &114201321264133176
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: event:/GEM_Button_Press
+  guid: 65d7a59b5d880d46b814b5fb3d2d360f
+  Banks:
+  - {fileID: 114670208756200008}
+=======
+  Path: event:/GEM_Result/GJS_Result_Min_Economy
+  guid: 24305000226ac246924dce8427ce7387
+  Banks:
+  - {fileID: 114847740488056286}
+>>>>>>> Audio
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 935
+--- !u!114 &114870453727436382
+=======
+  Length: 6312
 --- !u!114 &114202659716843452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +759,85 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 132308
+--- !u!114 &114207950410801060
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: Assets\M.E.G. FMOD Project\Build\Desktop\Master.strings.bank
+  lastModified: 636893204589321185
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1464
+  Exists: 1
+--- !u!114 &114948505629686052
+=======
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114253640526576694
+>>>>>>> Audio
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: event:/GJS_Result_Max_Technology
+  guid: 1dbb4405c33ba841bf0342192546e073
+  Banks:
+  - {fileID: 114670208756200008}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6852
+--- !u!114 &114978208184448306
+=======
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114259842435219312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
 --- !u!114 &114262894125303472
+>>>>>>> Audio
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,6 +849,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: event:/GJS_Result_Mid_1
+  guid: be89e5ea647c954e9717fee5e623c9e5
+  Banks:
+  - {fileID: 114670208756200008}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+=======
   Path: event:/GJS_Player_Typing_Loop
   guid: b4b6e6bc692bcc48b4c9bc828c989049
   Banks:
@@ -235,7 +895,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6312
---- !u!114 &114277776945565470
+--- !u!114 &114267829698161414
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,14 +904,91 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: D:\Projects\Games\Sustainabiliteam\M.E.G\Assets\M.E.G. FMOD Project\Build\Desktop\Master.strings.bank
-  lastModified: 636892006612695694
-  LoadResult: 70
-  FileSizes: []
-  Exists: 1
+  Path: event:/GEM_Narrative_Ending/GEM_Narrative_God_Good
+  guid: 2ee6693cda2a054dafc2e8d1dfac9bfa
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4539
+--- !u!114 &114288187204952782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Sliders/GEM_Slider_Economy
+  guid: 4175f6409187904188bc20e3032be343
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114341604874371824}
+  - {fileID: 114346863594444726}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
+--- !u!114 &114289560487184176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Result/GEM_Narrative_Result_Good
+  guid: 2fe993c005c35f45aa16d04c362822f7
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4437
+--- !u!114 &114290037890085506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Result/GEM_Narrative_Result_Bad
+  guid: 46bbabd2dc6d9f49a4ea6f883da1950c
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4061
 --- !u!114 &114311499748893716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +1012,123 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5048
---- !u!114 &114430469911822558
+--- !u!114 &114312730114477952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Sliders/GEM_Slider_Population
+  guid: ffc02085618aa24eaa1208b012c6dceb
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114717142883140282}
+  - {fileID: 114554045084849120}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
+--- !u!114 &114322496091347538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114326100834789752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114333126076302412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Max_Technology
+  guid: 1dbb4405c33ba841bf0342192546e073
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6852
+--- !u!114 &114341604874371824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114346863594444726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114365199129834440
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,11 +1140,179 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: D:\Projects\Games\Sustainabiliteam\M.E.G\Assets\M.E.G. FMOD Project\Build\Desktop\Master.bank
-  lastModified: 636892006613164437
+  Path: Assets/M.E.G. FMOD Project/Build/Desktop/Master.strings.bank
+  lastModified: 636892141440000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1796
+  Exists: 1
+--- !u!114 &114373039708984780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/gregcandel/Dropbox/__PROJECTS/Game Jam Sessions GITHUB/M.E.G/Assets/M.E.G.
+    FMOD Project/Build/Desktop/Master.strings.bank
+  lastModified: 636892084730000000
+  LoadResult: 70
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114384297813250034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Ending/GEM_Narrative_God_Average
+  guid: f478f0dd7a79d041b83e80f59291b948
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6921
+--- !u!114 &114390509542759534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Dropbox\__PROJECTS\Game Jam Sessions GITHUB\M.E.G\M.E.G\Assets\M.E.G. FMOD
+    Project\Build\Desktop\Master.bank
+  lastModified: 636893200646215259
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &114395556290797602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Music/GEM_Ambiance
+  guid: 3c2c1b274527404da7f7d2fed3daf332
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 132308
+--- !u!114 &114414094169495108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Sliders/GEM_Slider_Policy
+  guid: 6425ef037f912e4b891792e39bc0423f
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114115690498230332}
+  - {fileID: 114944839698075074}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
+--- !u!114 &114444865243702434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Ending/GEM_Narrative_God_Bad
+  guid: 9feada027eaf4448ac6020ca11e7dfde
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6226
+--- !u!114 &114450717286777026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\M.E.G. FMOD Project\Build\Desktop\Master.strings.bank
+  lastModified: 636893200646345364
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2078
+  Exists: 1
+--- !u!114 &114463955886790662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &114467339867752252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,7 +1336,217 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 73662
---- !u!114 &114591631658570428
+--- !u!114 &114468900332619706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Min_Resources
+  guid: 5150418966a2ed4f94fdd71d73e2f2fb
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5048
+--- !u!114 &114474492416197260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114481459326439164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114485910370534034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Min_Policies
+  guid: 0ae723d98ea98343a0c84de8521863f5
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4905
+--- !u!114 &114498520700868940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Min_Technology
+  guid: 0dee3124b437b0408c8981ee5f2b529e
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5139
+--- !u!114 &114500285698117928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Button_Press
+  guid: 65d7a59b5d880d46b814b5fb3d2d360f
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 290
+--- !u!114 &114502860045694180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Sliders/GEM_Slider_Resources
+  guid: b6e1c7c06fba5149939fc5fc3edae800
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114894511051877784}
+  - {fileID: 114994858207557290}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
+--- !u!114 &114511525668712302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114521780342255522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/gregcandel/Dropbox/__PROJECTS/Game Jam Sessions GITHUB/M.E.G/Assets/M.E.G.
+    FMOD Project/Build/Desktop/Master.bank
+  lastModified: 636892141440000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114528958521581146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Slider_Static
+  guid: 4175f6409187904188bc20e3032be343
+  Banks:
+  - {fileID: 114521780342255522}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114092212867014064}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
+--- !u!114 &114540648187576176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -332,6 +1563,237 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114553006402373652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Max_Policies
+  guid: 2aaefbc3ff43834e9c7adf383e0b23ed
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5779
+--- !u!114 &114553216531817924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Result/GEM_Narrative_Result_Good
+  guid: 2fe993c005c35f45aa16d04c362822f7
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4437
+--- !u!114 &114554045084849120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114575004433415266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Ending/GEM_Narrative_God_Bad
+  guid: 9feada027eaf4448ac6020ca11e7dfde
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6226
+--- !u!114 &114583440642733448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets/M.E.G. FMOD Project/Build/Desktop/Master.strings.bank
+  lastModified: 636892084730000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1796
+  Exists: 1
+--- !u!114 &114585756332783742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Result/GEM_Narrative_Result_Average
+  guid: 909d94e5a4d6974a9ab1db886b9f3744
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3986
+--- !u!114 &114599499936042862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Max_Resources
+  guid: 87da34200f9cab499cb7545bd7fe7d16
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6053
+--- !u!114 &114603811574907022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114616190535610020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114616193267024206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Min_Resources
+  guid: 5150418966a2ed4f94fdd71d73e2f2fb
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5048
+--- !u!114 &114622342409741762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Mid_1
+  guid: be89e5ea647c954e9717fee5e623c9e5
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6313
 --- !u!114 &114623566461660220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,10 +1814,125 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114165063750068540}
+  - {fileID: 114540648187576176}
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
+--- !u!114 &114637348113110050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Min_Technology
+  guid: 0dee3124b437b0408c8981ee5f2b529e
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5139
+--- !u!114 &114639222964152402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/gregcandel/Dropbox/__PROJECTS/Game Jam Sessions GITHUB/M.E.G/Assets/M.E.G.
+    FMOD Project/Build/Desktop/Master.strings.bank
+  lastModified: 636892141440000000
+  LoadResult: 70
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114649428714323302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114651889358083722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114656208998901808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114657410127303760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Ending/GEM_Narrative_God_Good
+  guid: 2ee6693cda2a054dafc2e8d1dfac9bfa
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4539
 --- !u!114 &114670208756200008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +1947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: D:\Dropbox\__PROJECTS\Game Jam Sessions GITHUB\M.E.G\M.E.G\Assets\M.E.G. FMOD
     Project\Build\Desktop\Master.bank
-  lastModified: 636893204589281333
+  lastModified: 636893215564822889
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -397,6 +1974,143 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5361
+--- !u!114 &114698240775017170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Min_Policies
+  guid: 0ae723d98ea98343a0c84de8521863f5
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4905
+--- !u!114 &114708773219443514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Max_Economy
+  guid: a23bac0a972eb340aba12054ead8485e
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5361
+--- !u!114 &114717142883140282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114725324145453892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114769901099923954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Max_Resources
+  guid: 87da34200f9cab499cb7545bd7fe7d16
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6053
+--- !u!114 &114777960400417728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114801865070664678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
 --- !u!114 &114807475638306282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,6 +2157,146 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 935
+--- !u!114 &114823968718779108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114829048928918312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114833829187153416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114846206292319812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Intro/GEM_Narrative_Intro_God
+  guid: 2957aae268ee4a4a84c4cc1a56eca108
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 73662
+--- !u!114 &114847740488056286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/gregcandel/Dropbox/__PROJECTS/Game Jam Sessions GITHUB/M.E.G/Assets/M.E.G.
+    FMOD Project/Build/Desktop/Master.bank
+  lastModified: 636892084730000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114854545626403176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GJS_Player_Typing_Loop
+  guid: b4b6e6bc692bcc48b4c9bc828c989049
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &114863223420504924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Sliders/GEM_Slider_Lifestyle
+  guid: 15d0275095e7934fab267b29eedbf1fd
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114823968718779108}
+  - {fileID: 114958080081706502}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
 --- !u!114 &114870453727436382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,12 +2310,191 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\M.E.G. FMOD Project\Build\Desktop\Master.strings.bank
-  lastModified: 636893204589321185
+  lastModified: 636893215564852915
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1464
   Exists: 1
+--- !u!114 &114870532958987946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Intro/GEM_Narrative_Intro_Player
+  guid: 615a4f91c4fa8a4a842b36ce4cf3cf92
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72773
+--- !u!114 &114871949897185304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Max_Policies
+  guid: 2aaefbc3ff43834e9c7adf383e0b23ed
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5779
+--- !u!114 &114894511051877784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114904467034111280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114917743239972274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Narrative_Intro/GEM_Narrative_Intro_Player
+  guid: 615a4f91c4fa8a4a842b36ce4cf3cf92
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72773
+--- !u!114 &114921724035711136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114930089807166152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114931144524479456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Sliders/GEM_Slider_Technology
+  guid: 1d3546e4fa3bff49a4f97a413a2f8f5b
+  Banks:
+  - {fileID: 114390509542759534}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114481459326439164}
+  - {fileID: 114801865070664678}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
+--- !u!114 &114944839698075074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
 --- !u!114 &114948505629686052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,6 +2518,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6852
+--- !u!114 &114958080081706502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
 --- !u!114 &114978208184448306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,4 +2557,63 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+  Length: 6313
+--- !u!114 &114982716071267550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Dropbox\__PROJECTS\Game Jam Sessions GITHUB\M.E.G\M.E.G\Assets\M.E.G. FMOD
+    Project\Build\Desktop\Master.strings.bank
+  lastModified: 636893200646345364
+  LoadResult: 70
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114994858207557290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114998182365805182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GEM_Result/GJS_Result_Mid_1
+  guid: be89e5ea647c954e9717fee5e623c9e5
+  Banks:
+  - {fileID: 114847740488056286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+>>>>>>> Audio
   Length: 6313

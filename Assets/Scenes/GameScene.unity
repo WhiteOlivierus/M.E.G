@@ -1606,7 +1606,7 @@ GameObject:
   - component: {fileID: 484985967}
   m_Layer: 0
   m_Name: LastValues
-  m_TagString: precision
+  m_TagString: lastValue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2478,7 +2478,7 @@ GameObject:
   - component: {fileID: 601349167}
   - component: {fileID: 601349166}
   m_Layer: 0
-  m_Name: PresicionMonitor
+  m_Name: LastValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3183,7 +3183,7 @@ GameObject:
   - component: {fileID: 890141303}
   - component: {fileID: 890141302}
   m_Layer: 0
-  m_Name: PresicionMonitor
+  m_Name: LastValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3635,7 +3635,7 @@ GameObject:
   - component: {fileID: 1048499646}
   - component: {fileID: 1048499645}
   m_Layer: 0
-  m_Name: PresicionMonitor
+  m_Name: LastValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4556,7 +4556,7 @@ GameObject:
   - component: {fileID: 1274540789}
   - component: {fileID: 1274540788}
   m_Layer: 0
-  m_Name: PresicionMonitor
+  m_Name: LastValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6090,7 +6090,7 @@ GameObject:
   - component: {fileID: 1628302436}
   - component: {fileID: 1628302435}
   m_Layer: 0
-  m_Name: PresicionMonitor
+  m_Name: LastValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6245,6 +6245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.24000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727180097633808493, guid: 7086fa7b61201cc469d2ced1ff844fd6,
+        type: 3}
+      propertyPath: snapRange
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7086fa7b61201cc469d2ced1ff844fd6, type: 3}
@@ -6455,7 +6460,7 @@ GameObject:
   - component: {fileID: 1761893682}
   - component: {fileID: 1761893681}
   m_Layer: 0
-  m_Name: PresicionMonitor
+  m_Name: LastValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - precision
   - icon
+  - lastValue
   layers:
   - Default
   - TransparentFX

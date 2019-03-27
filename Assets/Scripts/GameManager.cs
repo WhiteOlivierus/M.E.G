@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
 
         for (int i = 0; i < allSliders.Length; i++)
         {

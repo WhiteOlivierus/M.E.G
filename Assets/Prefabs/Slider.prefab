@@ -153,7 +153,6 @@ Transform:
   - {fileID: 1955498319393911314}
   - {fileID: 1955498318952682387}
   - {fileID: 1220307631}
-  - {fileID: 5878833280615795348}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -172,8 +171,7 @@ MonoBehaviour:
   value: 0
   sliderName:
   - {fileID: 4310366442168499115}
-  precisionMonitor:
-  - {fileID: 0}
+  precisionMonitor: {fileID: 0}
   maxRange: 100
   Event: event:/GEM_Slider_Static
 --- !u!1 &1955498319393911315
@@ -230,12 +228,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013312366000631698}
-  m_LocalRotation: {x: 0.5000001, y: 0.4999997, z: -0.5000002, w: 0.5}
-  m_LocalPosition: {x: 0.0000010514, y: 0.81, z: -0}
-  m_LocalScale: {x: 0.20981, y: 0.20981, z: 0.20981}
+  m_LocalRotation: {x: 0.0000015497208, y: 1, z: -0.00008651614, w: 0.00000017881393}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00023142844}
+  m_LocalScale: {x: 0.000059945716, y: 0.000059945716, z: 0.000059945716}
   m_Children: []
-  m_Father: {fileID: 1955498319355079908}
-  m_RootOrder: 4
+  m_Father: {fileID: 7682469588135023326}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90.00001, y: 360, z: 270}
 --- !u!212 &4310366442168499115
 SpriteRenderer:
@@ -314,7 +312,8 @@ Transform:
   m_LocalRotation: {x: -0.49995762, y: -0.5000424, z: -0.4999562, w: 0.5000438}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3500, y: 3500, z: 3500}
-  m_Children: []
+  m_Children:
+  - {fileID: 5878833280615795348}
   m_Father: {fileID: 1955498319355079908}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -89.990005}

@@ -35,4 +35,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-fmod_editor\.log
+fmod_editor.log

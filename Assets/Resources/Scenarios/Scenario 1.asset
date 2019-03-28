@@ -18,18 +18,18 @@ MonoBehaviour:
   - type: 1
     between: {x: 0, y: 20}
   - type: 2
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 3
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 4
     between: {x: 80, y: 90}
   - type: 5
     between: {x: 10, y: 20}
-  scenarioName: Scenario 2
-  scenario: {fileID: 21300000, guid: 5bddc6dd6b72e634293dbee555a99daa, type: 3}
+  scenarioName: "Cre\xEBereld overspoeld door water"
+  scenario: {fileID: 21300000, guid: 82c15a497bb6fc14ebe3a414c1dee4b5, type: 3}
   earthValues:
   - 0
+  - 0.3
+  - 0.4
   - 0
-  - 1
-  - 0
-  - 0
+  - 0.3

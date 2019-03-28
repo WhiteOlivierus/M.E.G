@@ -20,16 +20,16 @@ MonoBehaviour:
   - type: 2
     between: {x: 30, y: 40}
   - type: 3
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 4
     between: {x: 85, y: 90}
   - type: 5
     between: {x: 15, y: 25}
-  scenarioName: Sickly looking world
-  scenario: {fileID: 0}
+  scenarioName: "Cre\xEBer een scenario waar de mensheid de natuur heeft vergiftigd "
+  scenario: {fileID: 21300000, guid: 6a2c2d2f9bbdfbc49a1a98ddeefc6627, type: 3}
   earthValues:
   - 0
+  - 0.3
+  - 0.4
   - 0
-  - 0
-  - 0
-  - 1
+  - 0.3

@@ -552,8 +552,8 @@ namespace FMODUnity
             }
             catch (Exception exception)
             {
-                // UnityEngine.Debug.LogError(string.Format("FMOD Studio: copy banks for platform {0} : copying banks from {1} to {2}", platform.ToString(), bankSourceFolder, bankTargetFolder));
-                // UnityEngine.Debug.LogException(exception);
+                UnityEngine.Debug.LogError(string.Format("FMOD Studio: copy banks for platform {0} : copying banks from {1} to {2}", platform.ToString(), bankSourceFolder, bankTargetFolder));
+                UnityEngine.Debug.LogException(exception);
                 return;
             }
 

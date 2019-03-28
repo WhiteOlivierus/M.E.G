@@ -14,22 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliders:
   - type: 0
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 1
-    between: {x: 50, y: 50}
+    between: {x: 80, y: 95}
   - type: 2
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 3
-    between: {x: 50, y: 50}
+    between: {x: 50, y: 60}
   - type: 4
-    between: {x: 50, y: 50}
+    between: {x: 20, y: 35}
   - type: 5
-    between: {x: 50, y: 50}
-  scenarioName: Default State
-  scenario: {fileID: 0}
+    between: {x: 70, y: 85}
+  scenarioName: "Cre\xEBer een scenario waar de mensheid de natuur op 1 staat"
+  scenario: {fileID: 21300000, guid: 9a25a30181b95bf4bb5674e2369ac380, type: 3}
   earthValues:
   - 0
+  - 0.3
+  - 0.4
   - 0
-  - 1
-  - 0
-  - 0
+  - 0.3

@@ -48,7 +48,7 @@ MonoBehaviour:
   - {fileID: 114654177166040968}
   StringsBanks:
   - {fileID: 114840689447661294}
-  stringsBankWriteTime: 636893238001197754
+  stringsBankWriteTime: 636893564714335578
   cacheVersion: 3
 --- !u!114 &114011570061776014
 MonoBehaviour:
@@ -230,11 +230,28 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114636805648626796}
-  - {fileID: 114699165219286378}
+  - {fileID: 114834175634556056}
+  - {fileID: 114487615898270458}
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
+--- !u!114 &114315653870989346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &114319298974383814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,11 +272,28 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114130804625806638}
-  - {fileID: 114963079687637696}
+  - {fileID: 114481306884108632}
+  - {fileID: 114737120244769098}
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
+--- !u!114 &114319907118427882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &114321910145660076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,8 +383,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114133741576676504}
-  - {fileID: 114879377770196352}
+  - {fileID: 114431504948887726}
+  - {fileID: 114885569272279810}
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
@@ -417,6 +451,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 290
+--- !u!114 &114431504948887726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
 --- !u!114 &114433914495198416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,8 +488,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114789727200103860}
-  - {fileID: 114388043172663976}
+  - {fileID: 114460173683784752}
+  - {fileID: 114518302371284710}
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
@@ -465,6 +516,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6852
+--- !u!114 &114460173683784752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114481306884108632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114487615898270458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
 --- !u!114 &114503195187519410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,6 +590,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5048
+--- !u!114 &114518302371284710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
 --- !u!114 &114530675832580244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,8 +673,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114892426142476452}
-  - {fileID: 114991839120578960}
+  - {fileID: 114315653870989346}
+  - {fileID: 114773131895654996}
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
@@ -635,7 +754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Projects\Games\Sustainabiliteam\M.E.G\Assets\M.E.G. FMOD Project\Build\Desktop\Master.bank
-  lastModified: 636893238002205051
+  lastModified: 636893564723455953
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -659,8 +778,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114115094073816888}
-  - {fileID: 114066570098938854}
+  - {fileID: 114319907118427882}
+  - {fileID: 114870814605739888}
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
@@ -688,6 +807,40 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 6313
 --- !u!114 &114699165219286378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
+--- !u!114 &114737120244769098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114773131895654996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -744,6 +897,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 72773
+--- !u!114 &114834175634556056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &114840689447661294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,12 +927,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\M.E.G. FMOD Project\Build\Desktop\Master.strings.bank
-  lastModified: 636893238001197754
+  lastModified: 636893564714335578
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 2078
   Exists: 1
+--- !u!114 &114870814605739888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Value
+  Min: 0
+  Max: 1
+  Default: 0.50000006
+  Exists: 0
 --- !u!114 &114872431822033332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,11 +963,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Projects\Games\Sustainabiliteam\M.E.G\Assets\M.E.G. FMOD Project\Build\Desktop\Master.strings.bank
-  lastModified: 636893238001197754
+  lastModified: 636893564714335578
   LoadResult: 70
   FileSizes: []
   Exists: 1
 --- !u!114 &114879377770196352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sliding
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &114885569272279810
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

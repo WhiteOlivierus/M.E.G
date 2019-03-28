@@ -14,22 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliders:
   - type: 0
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 1
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 2
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 3
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 4
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 5
-    between: {x: 50, y: 50}
-  scenarioName: default
-  scenario: {fileID: 21300000, guid: 5bddc6dd6b72e634293dbee555a99daa, type: 3}
+    between: {x: 45, y: 55}
+  scenarioName: "Cre\xEBer een scenario waar de wereld zo dicht mogelijk bij de wereld
+    van nu ligt"
+  scenario: {fileID: 21300000, guid: f855b29179d418c4a950ac0b0cb6ab85, type: 3}
   earthValues:
   - 0
+  - 0.3
+  - 0.4
   - 0
-  - 1
-  - 0
-  - 0
+  - 0.3

@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using System.Collections;
 using TMPro;
 
@@ -14,7 +12,7 @@ public class GameManager : MonoBehaviour
     [Space] [SerializeField] private TextMesh turns = new TextMesh();
     [SerializeField] private int maxTurns = 0;
     [Space] public GameObject chargePort;
-    [Space] [SerializeField] private EarthController earthController;
+    [Space] [SerializeField] private GameObject earthController;
     [Space] [SerializeField] private Material wrongMaterial;
 
     private int turnsLeft;
@@ -100,16 +98,15 @@ public class GameManager : MonoBehaviour
     private void ShowEmpty()
     {
         SetText(goalText, "Replace batery for next goal");
-        SetText(resultText, "None");
+        SetText(resultText, "Replace batery for next goal");
         resultSprite.sprite = null;
     }
 
     private void ShowRight(int index)
     {
-        string scenarioResult = allScenarios[index].scenarioName;
-        resultSprite.sprite = allScenarios[index].scenario;
-        earthController.SetAllMaterials(allScenarios[index].earthValues);
-        SetText(resultText, scenarioResult);
+        resultSprite.sprite = currentScenario.scenario;
+        earthController.GetComponent<EarthController>().SetAllMaterials(currentScenario.earthValues);
+        SetText(resultText, currentScenario.scenarioName);
         ReleaseBattery();
     }
 
@@ -144,15 +141,15 @@ public class GameManager : MonoBehaviour
             for (int j = 0; j < allSliders.Length; j++)
             {
                 Slider currentSlider = currentScenario.sliders[j];
-                float x = allSliders[j].value;
-                if (allSliders[j].value >= currentSlider.between.y)
+                float sliderValue = allSliders[j].value;
+                if (sliderValue >= currentSlider.between.y)
                 {
-                    score += (int)Mathf.Abs(allSliders[j].value - currentSlider.between.y);
+                    score += (int)Mathf.Abs(sliderValue - currentSlider.between.y);
                     allSliders[j].SetPrecisionMonitor(1);
                 }
-                else if (allSliders[j].value <= currentSlider.between.x)
+                else if (sliderValue <= currentSlider.between.x)
                 {
-                    score += (int)Mathf.Abs(allSliders[j].value - currentSlider.between.x);
+                    score += (int)Mathf.Abs(sliderValue - currentSlider.between.x);
                     allSliders[j].SetPrecisionMonitor(-1);
                 }
                 else
@@ -160,6 +157,7 @@ public class GameManager : MonoBehaviour
                     allSliders[j].SetPrecisionMonitor(0);
                 }
             }
+
 
             if (score <= lastScore)
             {

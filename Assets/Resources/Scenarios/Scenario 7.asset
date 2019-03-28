@@ -18,18 +18,19 @@ MonoBehaviour:
   - type: 1
     between: {x: 5, y: 10}
   - type: 2
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 3
-    between: {x: 50, y: 50}
+    between: {x: 45, y: 55}
   - type: 4
     between: {x: 70, y: 80}
   - type: 5
-    between: {x: 50, y: 50}
-  scenarioName: Smog covered world
-  scenario: {fileID: 0}
+    between: {x: 45, y: 55}
+  scenarioName: "Cre\xEBer een scenario waar de meensheid hun lucht heeft vervuild
+    met smog"
+  scenario: {fileID: 21300000, guid: 80d0056f932db5249a57f7b37f2ea3bb, type: 3}
   earthValues:
   - 0
+  - 0.3
+  - 0.99
   - 0
-  - 0
-  - 0
-  - 1
+  - 0.3

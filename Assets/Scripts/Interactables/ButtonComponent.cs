@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using FMODUnity;
-using FMOD;
+
 public class ButtonComponent : MonoBehaviour, IInteractable
 {
     [EventRef]
